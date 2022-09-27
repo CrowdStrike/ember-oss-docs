@@ -1,5 +1,5 @@
 {
-  "name": "ember-oss-docs",
+  "name": "ember-oss-docs-monorepo",
   "version": "0.0.0",
   "private": true,
   "repository": "",
@@ -19,8 +19,9 @@
     "concurrently": "^7.2.1",
     "prettier": "^2.5.1"
   },
-  "workspaces": [
-    "ember-oss-docs",
-    "test-app"
-  ]
+  "pnpm": {
+    "overrides": {
+      "@types/eslint": "^7.0.0"
+    }
+  }
 }
