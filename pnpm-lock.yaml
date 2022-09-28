@@ -2228,9 +2228,6 @@ packages:
     resolution: {integrity: sha512-MiIcFyTT7SeXhkv0WK4/s/LW9Go1E2FGf8xu+4/1PeSPfSgAbEgRqIXHdtIreeFQhVrAwFFGff/+eHZkRgZWsA==}
     peerDependencies:
       '@glimmer/component': ^1.1.2
-    peerDependenciesMeta:
-      '@glimmer/component':
-        optional: true
     dependencies:
       '@glimmer/component': 1.1.2_@babel+core@7.19.3
     dev: true

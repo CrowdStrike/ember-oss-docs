@@ -14,7 +14,9 @@
   "author": "CrowdStrike UX Team",
   "files": [
     "addon-main.js",
-    "dist"
+    "dist",
+    "glint.d.ts",
+    "tailwind.cjs"
   ],
   "scripts": {
     "build": "rollup --config",
@@ -33,6 +35,7 @@
     "ember-url-hash-polyfill": "^1.0.8"
   },
   "peerDependencies": {
+    "@crowdstrike/tailwind-toucan-base": "^3.3.1",
     "@glimmer/component": "^1.1.2",
     "@glint/template": ">= 0.9.0"
   },
@@ -121,6 +124,7 @@
   "exports": {
     ".": "./dist/index.js",
     "./glint": "./glint.d.ts",
+    "./tailwind": "./tailwind.cjs",
     "./*": "./dist/*",
     "./addon-main.js": "./addon-main.js"
   }

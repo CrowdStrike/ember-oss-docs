@@ -9,15 +9,20 @@
 
 
   {{!-- template-lint-disable no-inline-styles --}}
-  <div class="bg-surface-md shadow-md" style="height: 80px">
-    <div class="max-w-screen-2xl flex items-center justify-between mx-auto px-20 h-full">
-      <div class="flex items-center gap-2 h-full">
+  <div class="bg-surface-md shadow-md h-[60px] lg:h-[80px]">
+    <div class="max-w-screen-2xl flex items-center justify-between mx-auto px-10 lg:px-20 h-full">
+      <div class="hidden md:flex items-center gap-2 h-full">
         {{#if (has-block "logo")}}
           {{yield to="logo"}}
 
           <span>|</span>
         {{/if}}
 
+        <span class="uppercase type-xl" style="font-weight: bold;">
+          {{yield to="title"}}
+        </span>
+      </div>
+      <div class="hidden sm:flex md:hidden items-center gap-2 h-full">
         <span class="uppercase type-xl" style="font-weight: bold;">
           {{yield to="title"}}
         </span>
