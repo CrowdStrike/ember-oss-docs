@@ -13,6 +13,7 @@
     "start:addon": "pnpm --filter ember-oss-docs start --no-watch.clearScreen",
     "test": "pnpm --filter ember-oss-docs test",
     "lint": "pnpm --filter '*' lint",
+    "ci:update": "npx ember-ci-update",
     "lint:fix": "pnpm --filter '*' lint:fix"
   },
   "devDependencies": {
@@ -22,6 +23,12 @@
   "pnpm": {
     "overrides": {
       "@types/eslint": "^7.0.0"
+    },
+    "peerDependencyRules": {
+      "ignoreMissing": ["@babel/core", "ember-cli-htmlbars"]
     }
+  },
+  "volta": {
+    "node": "16.17.1"
   }
 }

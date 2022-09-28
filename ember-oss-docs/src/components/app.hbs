@@ -1,0 +1,11 @@
+<div class="flex flex-col h-screen leading-none">
+  <div class="bg-ground-floor flex flex-col flex-grow min-w-toucan text-titles-and-attributes">
+    {{yield to="topBar"}}
+
+    <div class="flex flex-col flex-grow">
+      {{yield to="content"}}
+    </div>
+  </div>
+
+  {{yield to="footer"}}
+</div>
