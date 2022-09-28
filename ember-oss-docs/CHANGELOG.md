@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.1...v1.0.2) (2022-09-28)
+
+
+### Bug Fixes
+
+* **components:** export the icon component ([662a724](https://github.com/CrowdStrike/ember-oss-docs/commit/662a724f22ec8e71a19fcb06ae3331271e291bd1))
+
 ## [1.0.1](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.0...v1.0.1) (2022-09-28)
 
 
