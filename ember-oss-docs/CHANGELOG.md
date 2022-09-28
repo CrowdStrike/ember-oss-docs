@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.6...v1.0.7) (2022-09-28)
+
+
+### Bug Fixes
+
+* **map:** because of lazy rollup config, map needs a default export ([75a764a](https://github.com/CrowdStrike/ember-oss-docs/commit/75a764ae435dce8cf24872cbbbed539526c90c6c))
+
 ## [1.0.6](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.5...v1.0.6) (2022-09-28)
 
 
