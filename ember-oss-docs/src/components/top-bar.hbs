@@ -1,0 +1,34 @@
+<header class="relative" ...attributes>
+  <Toucan::Link
+    @href="#main"
+    @variant="primary"
+    class="-top-full absolute left-2 z-skip-to-content focus:top-2 print:hidden"
+  >
+    Skip to main
+  </Toucan::Link>
+
+
+  {{!-- template-lint-disable no-inline-styles --}}
+  <div class="bg-surface-md shadow-md" style="height: 80px">
+    <div class="max-w-screen-2xl flex items-center justify-between mx-auto px-20 h-full">
+      <div class="flex items-center gap-2 h-full">
+        {{#if (has-block "logo")}}
+          {{yield to="logo"}}
+
+          <span>|</span>
+        {{/if}}
+
+        <span class="uppercase type-xl" style="font-weight: bold;">
+          {{yield to="title"}}
+        </span>
+      </div>
+
+
+      <nav class="flex gap-2">
+        {{yield to="links"}}
+      </nav>
+    </div>
+  </div>
+
+  <div data-test-selector="skip-to-target" id="skip-to-target" tabindex="-1" ></div>
+</header>

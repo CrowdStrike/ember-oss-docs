@@ -1,0 +1,27 @@
+provider: github
+template: "v2-addon"
+
+# ---------------------
+
+addon: './ember-oss-docs'
+testApp: './test-app'
+
+lint:
+  commits: true
+  eslint:
+    - './ember-oss-docs'
+    - './test-app'
+
+build:
+  run: 'pnpm build'
+  expect: |
+    components/app.js
+    components/hero.js
+    components/main.js
+
+support:
+  ember-try: false
+  typescript: false
+
+release:
+  semantic: true
