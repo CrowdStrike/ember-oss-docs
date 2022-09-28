@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.3...v1.0.4) (2022-09-28)
+
+
+### Bug Fixes
+
+* **components:** add logo as SVG, some alignment issues ([f1f687b](https://github.com/CrowdStrike/ember-oss-docs/commit/f1f687b27ac0c5cec47e1f6c3d73a126b8a8342e))
+
 ## [1.0.3](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.2...v1.0.3) (2022-09-28)
 
 
