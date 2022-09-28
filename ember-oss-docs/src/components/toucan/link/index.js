@@ -3,13 +3,23 @@ import { assert } from '@ember/debug';
 
 const VALID_VARIANTS = ['destructive', 'normal', 'primary', 'quiet', 'brand'];
 
-interface Args {
-  disabled?: boolean;
-  href: string;
-  tooltip?: string;
-  variant?: 'destructive' | 'normal' | 'primary' | 'quiet' | 'brand';
-}
-export default class ToucanLink extends Component<Args> {
+const INTERACTIVE_VARIANT = {
+  destructive: 'interactive-destructive',
+  normal: 'interactive-normal',
+  primary: 'interactive-primary',
+  quiet: 'interactive-quiet',
+  brand: 'interactive-brand',
+};
+
+const FOCUSABLE_VARIANT = {
+  destructive: 'focusable-destructive',
+  normal: 'focusable-normal',
+  primary: 'focusable-primary',
+  quiet: 'focusable-quiet',
+  brand: 'focusable-brand',
+};
+
+export default class ToucanLink extends Component {
   get disabledStyle() {
     let { variant } = this;
 
@@ -17,7 +27,7 @@ export default class ToucanLink extends Component<Args> {
       return [
         ...this.baseButtonStyles,
         `focus:outline-none`,
-        `interactive-${variant}`,
+        INTERACTIVE_VARIANT[variant],
         'interactive-disabled',
       ].join(' ');
     }
@@ -32,8 +42,8 @@ export default class ToucanLink extends Component<Args> {
       return [
         ...this.baseButtonStyles,
         'focusable',
-        `focusable-${variant}`,
-        `interactive-${variant}`,
+        FOCUSABLE_VARIANT[variant],
+        INTERACTIVE_VARIANT[variant],
       ].join(' ');
     }
 
