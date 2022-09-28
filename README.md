@@ -1,8 +1,9 @@
 ember-oss-docs
 ==============================================================================
 
-Generally not for usage in non-cs projects, as documentation for this addon
-may be light, and is highly coupled to the Toucan design system.
+Generally not for usage in non-CrowdStrike projects,
+as documentation for this addon may be light,
+and is highly coupled to the Toucan design system.
 
 This library does not provide any semver guarantees.
 
