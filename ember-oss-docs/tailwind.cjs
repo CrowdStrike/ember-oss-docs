@@ -34,6 +34,8 @@ module.exports = {
       // eslint-disable-next-line node/no-missing-require
       presets: [require('@crowdstrike/tailwind-toucan-base')],
       safelist: ['theme-dark', 'theme-light', 'theme-mezzanine'],
+      // eslint-disable-next-line node/no-missing-require
+      plugins: [require('@tailwindcss/typography')],
     };
   },
 };
