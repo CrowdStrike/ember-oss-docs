@@ -8,3 +8,5 @@ export const MAP = {
   ['micro/caret-right-16']: MicroCaretRight16,
   ['controls/favorite-24']: ControlsFavorite24,
 };
+
+export default MAP;
