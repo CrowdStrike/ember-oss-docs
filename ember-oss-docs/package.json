@@ -29,7 +29,8 @@
     "prepack": "rollup --config"
   },
   "dependencies": {
-    "@embroider/addon-shim": "^1.0.0"
+    "@embroider/addon-shim": "^1.0.0",
+    "ember-url-hash-polyfill": "^1.0.8"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
@@ -83,7 +84,8 @@
       "./components/toucan/icon/controls/favorite-24.js": "./dist/_app_/components/toucan/icon/controls/favorite-24.js",
       "./components/toucan/icon/micro/caret-left-16.js": "./dist/_app_/components/toucan/icon/micro/caret-left-16.js",
       "./components/toucan/icon/micro/caret-right-16.js": "./dist/_app_/components/toucan/icon/micro/caret-right-16.js",
-      "./components/toucan/link/index.js": "./dist/_app_/components/toucan/link/index.js"
+      "./components/toucan/link/index.js": "./dist/_app_/components/toucan/link/index.js",
+      "./services/navigation.js": "./dist/_app_/services/navigation.js"
     }
   },
   "release": {
