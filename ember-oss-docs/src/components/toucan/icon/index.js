@@ -1,20 +1,12 @@
 // Until types for this are published, we can't safely guarantee it exists or is missing
 import Component from '@glimmer/component';
-// eslint-disable-next-line
-// @ts-ignore
 import { setComponentTemplate } from '@ember/component';
 import { assert } from '@ember/debug';
 import { hbs } from 'ember-cli-htmlbars';
 
-interface Args {
-  path: string;
-}
-
-// eslint-disable-next-line
-// @ts-ignore
 import { MAP } from './map';
 
-export default class IconComponent extends Component<Args> {
+export default class IconComponent extends Component {
   get Icon() {
     let { path } = this.args;
     // eslint-disable-next-line
