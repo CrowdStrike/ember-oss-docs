@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.5...v1.0.6) (2022-09-28)
+
+
+### Bug Fixes
+
+* **tailwind:** add the tailwind prose plugin ([12215e4](https://github.com/CrowdStrike/ember-oss-docs/commit/12215e4bdbae46813976795bf05f0b10a6b4c925))
+
 ## [1.0.5](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.4...v1.0.5) (2022-09-28)
 
 
