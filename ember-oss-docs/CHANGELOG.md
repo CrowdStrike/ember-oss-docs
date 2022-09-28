@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.4...v1.0.5) (2022-09-28)
+
+
+### Bug Fixes
+
+* **tailwind:** add shareable config ([cf4fb2e](https://github.com/CrowdStrike/ember-oss-docs/commit/cf4fb2ec60bfe90d7179e06242c938e9803ee521))
+
 ## [1.0.4](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.3...v1.0.4) (2022-09-28)
 
 
