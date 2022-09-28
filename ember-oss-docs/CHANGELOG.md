@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.2...v1.0.3) (2022-09-28)
+
+
+### Bug Fixes
+
+* **build:** rollup configuration fixes ([cbd4595](https://github.com/CrowdStrike/ember-oss-docs/commit/cbd4595887b6d9f52f3a19889eccb5743d569afe))
+
 ## [1.0.2](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.1...v1.0.2) (2022-09-28)
 
 
