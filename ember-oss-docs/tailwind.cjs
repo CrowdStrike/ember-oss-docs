@@ -3,7 +3,7 @@
 const path = require('path');
 
 module.exports = {
-  tailwindConfig(appRoot) {
+  tailwindConfig(appRoot, overrides = {}) {
     const appEntry = path.join(appRoot, 'app');
     const relevantFilesGlob = '**/*.{html,js,ts,hbs,gjs,gts}';
 
@@ -21,6 +21,7 @@ module.exports = {
 
           return `${packagePath}/${relevantFilesGlob}`;
         }),
+        ...overrides.content,
       ],
       theme: {
         extend: {
