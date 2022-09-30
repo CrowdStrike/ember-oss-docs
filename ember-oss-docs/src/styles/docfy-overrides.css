@@ -12,7 +12,7 @@ h2#examples {
   --tw-prose-code: var(--text-body-and-labels);
 }
 
-.prose .docfy-demo__example button {
+.prose .docfy-demo__example button:where(button:not(:where([class~="reset-styles"]))) {
   @apply focusable interactive-normal duration-150 ease-out inline-flex items-center justify-center px-2 py-1 rounded-sm transition type-md-medium;
 }
 
@@ -44,6 +44,10 @@ h2#examples {
 
 .docfy-demo code {
   @apply shadow-inner-lg rounded-sm px-4 py-2;
+}
+
+.docfy-demo__description__header {
+  @apply text-right;
 }
 
 .docfy-demo__snippets {
