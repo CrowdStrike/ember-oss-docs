@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.11...v1.0.12) (2022-09-30)
+
+
+### Bug Fixes
+
+* **styles:** add better darkmode styles for docfy stuff ([022e51b](https://github.com/CrowdStrike/ember-oss-docs/commit/022e51bb7d4dfba717dbebc683df5815f796867f))
+
 ## [1.0.11](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.10...v1.0.11) (2022-09-30)
 
 
