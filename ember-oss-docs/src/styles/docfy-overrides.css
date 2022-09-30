@@ -5,6 +5,12 @@ h2#examples {
   display: none;
 }
 
+.prose.markdown {
+  --tw-prose-headings: var(--text-and-icons);
+  --tw-prose-body: var(--text-and-icons);
+  --tw-prose-links: var(--text-primary-idle);
+  --tw-prose-code: var(--text-body-and-labels);
+}
 
 .prose .docfy-demo__example button {
   @apply focusable interactive-normal duration-150 ease-out inline-flex items-center justify-center px-2 py-1 rounded-sm transition type-md-medium;
@@ -13,6 +19,11 @@ h2#examples {
 .docfy-demo__snippet {
   max-height: 30rem;
   overflow-y: scroll;
+  @apply rounded;
+}
+
+.theme-dark .markdown pre {
+  @apply border;
 }
 
 .docfy-demo {

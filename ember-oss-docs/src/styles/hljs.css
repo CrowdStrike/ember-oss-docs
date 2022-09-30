@@ -1,4 +1,7 @@
-
+/**
+ * These colors are from the Horizon Theme.
+ * https://horizontheme.netlify.app/
+ */
 :root {
   /* "Dark" */
   --horizon-lavender: #B877DB;
@@ -17,7 +20,7 @@
   --horizon-jaffa: #F77D26;
 }
 
-.theme-light {
+.theme-light, .theme-dark {
   --horizon-shadow: #16161C;
   --horizon-border: #1A1C23;
   --horizon-background: #1C1E26;
@@ -47,31 +50,6 @@
   --code-string: var(--horizon-tacao);
   --code-keyword: var(--horizon-lavender);
   --code-highlight-bg: var(--horizon-background);
-}
-
-.syntax-normal {
-  --horizon-blue: #26BBD9;
-  --horizon-cyan:#59E3E3;
-  --horizon-green: #29D398;
-  --horizon-magenta: #EE64AE;
-  --horizon-red: #E95678;
-  --horizon-yellow: #FAB795;
-}
-
-.theme-dark {
-  --horizon-shadow: #16161C;
-  --horizon-border: #1A1C23;
-  --horizon-background: #FDF0ED;
-  --horizon-background-alt: #FADAD1;
-  --horizon-accent: #F9CBBE;
-  --horizon-accent-alt: #F9CEC3;
-  --horizon-accent: #E73665;
-  --horizon-secondary-accent-alt: #E84A72;
-  --horizon-negative: #F43E5C;
-  --horizon-positive: #07DA8C;
-  --horizon-warning: #1EB980;
-  --horizon-modifier: #1EAEAE;
-  --horizon-tertiary-accent: #AF5427;
 
   /* overrides, for readability */
   --horizon-amethyst: #8931B9;
@@ -86,25 +64,6 @@
   --horizon-magenta: #F075B7;
   --horizon-red: #EC6A88;
   --horizon-yellow: #bb8367;
-
-}
-
-.theme-dark {
-  --code-bg: white;
-  --code-variable: var(--horizon-crimson);
-  --code-param: var(--horizon-tango);
-  --code-class: var(--horizon-yellow);
-  --code-tag: var(--horizon-accent-alt);
-  --code-name: var(--horizon-crimson);
-  --code-number: var(--horizon-accent);
-  --code-punctuation: #aaa;
-  --code-regex: #be4678;
-  --code-function: var(--horizon-turquoise);
-  --code-builtin: var(--horizon-lavender);
-  --code-literal: var(--horizon-cranberry);
-  --code-string: var(--horizon-thunderbird);
-  --code-keyword: var(--horizon-amethyst);
-  --code-highlight-bg: var(--horizon-background);
 }
 
 .prose {
