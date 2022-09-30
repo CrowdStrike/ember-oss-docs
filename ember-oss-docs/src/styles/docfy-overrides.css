@@ -1,0 +1,69 @@
+/**
+ * This isn't customizable, so let's hide it
+ */
+h2#examples {
+  display: none;
+}
+
+
+.prose .docfy-demo__example button {
+  @apply focusable interactive-normal duration-150 ease-out inline-flex items-center justify-center px-2 py-1 rounded-sm transition type-md-medium;
+}
+
+.docfy-demo__snippet {
+  max-height: 30rem;
+  overflow-y: scroll;
+}
+
+.docfy-demo {
+  @apply isolate flex flex-col gap-4 rounded-sm;
+}
+
+.docfy-collection .docfy-demo {
+  @apply grid-rows-docfy-container grid h-full shadow-none;
+}
+
+.docfy-collection .docfy-demo__snippet {
+  overflow-x: auto;
+}
+
+.docfy-collection .docfy-demo__example {
+  @apply grid justify-items-center;
+}
+
+.docfy-demo code {
+  @apply shadow-inner-lg rounded-sm px-4 py-2;
+}
+
+.docfy-demo__snippets {
+  @apply overflow-x-auto;
+}
+
+.docfy-demo__snippets__tabs {
+  @apply pl-2;
+}
+
+.docfy-demo__snippets__tabs__button {
+  @apply type-md text-body-and-labels ring-offset-focus ring-ground-floor relative
+    px-6 py-2 ring-inset ring-offset-2;
+}
+
+.docfy-demo__snippets__tabs__button:hover {
+  @apply outline-none text-positive;
+}
+
+.docfy-demo__snippets__tabs__button:focus-visible {
+  @apply ring-2;
+}
+.docfy-demo__snippets__tabs__button:focus {
+  @apply text-blue outline-none;
+}
+
+.docfy-demo__snippets__tabs__button--active {
+  @apply type-md-medium text-text-and-icons;
+}
+.docfy-demo__snippets__tabs__button--active::after {
+  @apply bg-blue z-1 absolute bottom-0 left-0 right-0 rounded-t-sm;
+  content: ' ';
+  height: 3px;
+}

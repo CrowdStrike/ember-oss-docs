@@ -1,6 +1,6 @@
-import { babel } from '@rollup/plugin-babel';
 import copy from 'rollup-plugin-copy';
 import { Addon } from '@embroider/addon-dev/rollup';
+import ts from 'rollup-plugin-ts';
 
 const addon = new Addon({
   srcDir: 'src',
@@ -19,12 +19,18 @@ export default {
   plugins: [
     // These are the modules that users should be able to import from your
     // addon. Anything not listed here may get optimized away.
-    addon.publicEntrypoints(['index.js', 'components/**/*.js', 'services/**/*.js']),
+    addon.publicEntrypoints([
+      'index.js',
+      'components/**/*.js',
+      'services/**/*.js',
+      'modifiers/highlight.{js,ts}',
+      'utils/*.ts',
+    ]),
 
     // These are the modules that should get reexported into the traditional
     // "app" tree. Things in here should also be in publicEntrypoints above, but
     // not everything in publicEntrypoints necessarily needs to go here.
-    addon.appReexports(['components/**/*.js', 'services/**/*.js']),
+    addon.appReexports(['components/**/*.js', 'services/**/*.js', 'modifiers/highlight.js']),
 
     // This babel config should *not* apply presets or compile away ES modules.
     // It exists only to provide development niceties for you, like automatic
@@ -32,8 +38,27 @@ export default {
     //
     // By default, this will load the actual babel config from the file
     // babel.config.json.
-    babel({
-      babelHelpers: 'bundled',
+    ts({
+      // can be changed to swc or other transpilers later
+      // but we need the ember plugins converted first
+      // (template compilation and co-location)
+      transpiler: 'babel',
+      babelConfig: './babel.config.json',
+      browserslist: ['last 2 firefox versions', 'last 2 chrome versions'],
+      tsconfig: {
+        fileName: 'tsconfig.json',
+        hook: (config) => ({
+          ...config,
+          declaration: true,
+          // TODO: these aren't being generated? why?
+          declarationMap: true,
+          // See: https://devblogs.microsoft.com/typescript/announcing-typescript-4-5/#beta-delta
+          // Allows us to use `exports` to define types per export
+          // However, it was declared as not ready
+          // as a result, we need extra / fallback references in the package.json
+          declarationDir: './dist',
+        }),
+      },
     }),
 
     // Follow the V2 Addon rules about dependencies. Your code can import from

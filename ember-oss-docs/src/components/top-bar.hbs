@@ -18,9 +18,11 @@
           <span>|</span>
         {{/if}}
 
-        <span class="uppercase type-xl" style="font-weight: bold;">
-          {{yield to="title"}}
-        </span>
+        <Toucan::Link @variant="quiet" @href="/">
+          <span class="uppercase type-xl" style="font-weight: bold;">
+            {{yield to="title"}}
+          </span>
+        </Toucan::Link>
       </div>
       <div class="hidden sm:flex md:hidden items-center gap-2 h-full">
         <span class="uppercase type-xl" style="font-weight: bold;">

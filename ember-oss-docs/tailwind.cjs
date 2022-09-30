@@ -9,21 +9,23 @@ module.exports = {
     const relevantFilesGlob = '**/*.{html,js,ts,hbs,gjs,gts}';
 
     const packageJson = require(path.join(appRoot, 'package.json'));
+    const appPath = path.join(appEntry, relevantFilesGlob);
+
+    const contentPaths = [
+      appPath,
+
+      /**
+       * Also check if addons/libraries contain any tailwind classes
+       * that we need to include
+       */
+      ...Object.keys(packageJson.dependencies).map((depName) => {
+        const packagePath = path.dirname(require.resolve(depName, { paths: [appRoot] }));
+
+        return `${packagePath}/${relevantFilesGlob}`;
+      }),
+    ];
 
     const base = {
-      content: [
-        path.join(appEntry, relevantFilesGlob),
-        /**
-         * Also check if addons/libraries contain any tailwind classes
-         * that we need to include
-         */
-        ...Object.keys(packageJson.dependencies).map((depName) => {
-          const packagePath = path.dirname(require.resolve(depName, { paths: [appRoot] }));
-
-          return `${packagePath}/${relevantFilesGlob}`;
-        }),
-        ...(overrides.content || []),
-      ],
       theme: {
         extend: {
           screens: {
@@ -40,6 +42,11 @@ module.exports = {
       plugins: [require('@tailwindcss/typography')],
     };
 
-    return merge(base, overrides);
+    return merge(base, overrides, {
+      /**
+       * Array merging is goofy, so we manage this ourselves
+       */
+      content: [...contentPaths, ...(overrides?.content ?? [])],
+    });
   },
 };
