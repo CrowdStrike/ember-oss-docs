@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.8...v1.0.9) (2022-09-30)
+
+
+### Bug Fixes
+
+* **responsiveness:** add more breakpoint usages in the components ([e25a25a](https://github.com/CrowdStrike/ember-oss-docs/commit/e25a25a876f7cb054f163339b2248966b2da1d31))
+
 ## [1.0.8](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.7...v1.0.8) (2022-09-29)
 
 
