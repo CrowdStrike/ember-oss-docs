@@ -1,3 +1,11 @@
+## [1.0.11](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.10...v1.0.11) (2022-09-30)
+
+
+### Bug Fixes
+
+* **docs:** move the docfy shared components into this addon ([429b776](https://github.com/CrowdStrike/ember-oss-docs/commit/429b77607b827ccb6bfc5b9916939f2d5eb5ea7d))
+* **input:** add focusable class ([ac023c1](https://github.com/CrowdStrike/ember-oss-docs/commit/ac023c1a66efb7bd664364e78a999b88a6805cc3))
+
 ## [1.0.10](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.9...v1.0.10) (2022-09-30)
 
 
