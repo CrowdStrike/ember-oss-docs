@@ -37,6 +37,7 @@ importers:
       eslint-plugin-ember: ^10.5.8
       eslint-plugin-node: ^11.1.0
       eslint-plugin-prettier: ^4.0.0
+      lodash.merge: ^4.6.2
       prettier: ^2.5.1
       rollup: ^2.67.0
       rollup-plugin-copy: ^3.4.0
@@ -45,6 +46,7 @@ importers:
     dependencies:
       '@embroider/addon-shim': 1.8.3
       ember-url-hash-polyfill: 1.0.8_@babel+core@7.19.3
+      lodash.merge: 4.6.2
     devDependencies:
       '@babel/core': 7.19.3
       '@babel/eslint-parser': 7.19.1_mmbyq476xpa6tuwz6732ekfpz4
@@ -10144,7 +10146,6 @@ packages:
 
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
-    dev: true
 
   /lodash.omit/4.5.0:
     resolution: {integrity: sha512-XeqSp49hNGmlkj2EJlfrQFIzQ6lXdNro9sddtQzcJY8QaoC2GO0DT7xaIokHeyM+mIT0mPMlPvkYzg2xCuHdZg==}

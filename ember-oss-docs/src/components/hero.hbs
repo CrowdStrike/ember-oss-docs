@@ -1,13 +1,8 @@
 {{!-- template-lint-disable no-inline-styles --}}
-<div class="relative flex flex-col" style="background: black;" ...attributes>
-  {{#if @image}}
-    {{! background image has no contextual significance }}
-    <img class="z-1 self-end" src={{@image}} alt="" role="none">
-  {{/if}}
-
-  <div class="z-2 absolute inset-0 flex items-center" style="color: white">
+<div class="relative flex flex-col" style="background-color: black;" ...attributes>
+  <div class="flex items-center" style="color: white">
     <div class="w-full max-w-screen-2xl mx-auto">
-      <div class="max-w-3xl px-20">
+      <div class="max-w-3xl p-10 sm:p-20">
         {{yield}}
       </div>
     </div>

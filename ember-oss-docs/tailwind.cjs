@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+const merge = require('lodash.merge');
 
 module.exports = {
   tailwindConfig(appRoot, overrides = {}) {
@@ -9,7 +10,7 @@ module.exports = {
 
     const packageJson = require(path.join(appRoot, 'package.json'));
 
-    return {
+    const base = {
       content: [
         path.join(appEntry, relevantFilesGlob),
         /**
@@ -21,7 +22,7 @@ module.exports = {
 
           return `${packagePath}/${relevantFilesGlob}`;
         }),
-        ...overrides.content,
+        ...(overrides.content || []),
       ],
       theme: {
         extend: {
@@ -38,5 +39,7 @@ module.exports = {
       // eslint-disable-next-line node/no-missing-require
       plugins: [require('@tailwindcss/typography')],
     };
+
+    return merge(base, overrides);
   },
 };

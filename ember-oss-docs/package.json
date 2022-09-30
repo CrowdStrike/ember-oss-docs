@@ -32,7 +32,8 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.8.3",
-    "ember-url-hash-polyfill": "^1.0.8"
+    "ember-url-hash-polyfill": "^1.0.8",
+    "lodash.merge": "^4.6.2"
   },
   "peerDependencies": {
     "@crowdstrike/tailwind-toucan-base": "^3.3.1",
