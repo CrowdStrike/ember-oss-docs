@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.9...v1.0.10) (2022-09-30)
+
+
+### Bug Fixes
+
+* top-level exports for laziness ([b47874a](https://github.com/CrowdStrike/ember-oss-docs/commit/b47874a8858afb90e0ccaee18f35f89177937b0b))
+
 ## [1.0.9](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.8...v1.0.9) (2022-09-30)
 
 
