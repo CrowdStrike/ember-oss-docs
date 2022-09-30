@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.12...v1.0.13) (2022-09-30)
+
+
+### Bug Fixes
+
+* **styles:** allow elements to opt out of default styles ([eeb36d2](https://github.com/CrowdStrike/ember-oss-docs/commit/eeb36d299e9bde993dbe0484223b3a42abe1c398))
+
 ## [1.0.12](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.11...v1.0.12) (2022-09-30)
 
 
