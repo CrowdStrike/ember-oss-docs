@@ -1,5 +1,7 @@
 import Component from '@glimmer/component';
+import { DEBUG } from '@glimmer/env';
 import { assert } from '@ember/debug';
+import { service } from '@ember/service';
 
 const VALID_VARIANTS = ['destructive', 'normal', 'primary', 'quiet', 'brand'];
 
@@ -19,20 +21,63 @@ const FOCUSABLE_VARIANT = {
   brand: 'focusable-brand',
 };
 
+const baseButtonStyles = [
+  'duration-150',
+  'ease-out',
+  'inline-flex',
+  'items-center',
+  'justify-center',
+  'px-2',
+  'py-1',
+  'rounded-sm',
+  'transition',
+  'type-md-medium',
+];
+
+const baseLinkStyles = ['inline-block', 'relative', 'underline'];
+
+const baseLinkInteractions = [
+  'focusable-outer',
+  'focus:text-primary-hover',
+  'hover:text-primary-hover',
+  'active:text-primary-pressed',
+  'text-primary-idle',
+];
+
 export default class ToucanLink extends Component {
+  @service navigation;
+
+  get href() {
+    if (DEBUG) {
+      let hasValidHref = this.args.href?.length > 0;
+
+      if (!hasValidHref) {
+        console.error(
+          'WARNING: <Link /> does not have a valid `href` attribute. Search the dom for #dev--missing-href'
+        );
+
+        return '#dev--missing-href';
+      }
+    }
+
+    let { href } = this.args;
+
+    return href;
+  }
+
   get disabledStyle() {
     let { variant } = this;
 
     if (variant) {
       return [
-        ...this.baseButtonStyles,
+        ...baseButtonStyles,
         `focus:outline-none`,
         INTERACTIVE_VARIANT[variant],
         'interactive-disabled',
       ].join(' ');
     }
 
-    return [...this.baseLinkStyles, 'focus:outline-none', 'text-disabled'].join(' ');
+    return [...baseLinkStyles, 'focus:outline-none', 'text-disabled'].join(' ');
   }
 
   get style() {
@@ -40,40 +85,14 @@ export default class ToucanLink extends Component {
 
     if (variant) {
       return [
-        ...this.baseButtonStyles,
+        ...baseButtonStyles,
         'focusable',
         FOCUSABLE_VARIANT[variant],
         INTERACTIVE_VARIANT[variant],
       ].join(' ');
     }
 
-    return [
-      ...this.baseLinkStyles,
-      'focusable-outer',
-      'focus:text-primary-hover',
-      'hover:text-primary-hover',
-      'active:text-primary-pressed',
-      'text-primary-idle',
-    ].join(' ');
-  }
-
-  get baseButtonStyles() {
-    return [
-      'duration-150',
-      'ease-out',
-      'inline-flex',
-      'items-center',
-      'justify-center',
-      'px-2',
-      'py-1',
-      'rounded-sm',
-      'transition',
-      'type-md-medium',
-    ];
-  }
-
-  get baseLinkStyles() {
-    return ['inline-block', 'relative', 'underline'];
+    return [...baseLinkStyles, ...baseLinkInteractions].join(' ');
   }
 
   get variant() {
@@ -88,4 +107,15 @@ export default class ToucanLink extends Component {
 
     return variant;
   }
+
+  navigate = (event) => {
+    if (this.href.startsWith('#')) {
+      // Link is an internal anchor in the current page, so allow default navigation
+      this.args.onClick?.(event);
+
+      return;
+    }
+
+    this.navigation.handleAnchorClick(event);
+  };
 }

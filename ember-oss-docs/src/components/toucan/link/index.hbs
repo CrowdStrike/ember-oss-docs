@@ -9,12 +9,13 @@
     {{yield}}
   </span>
 {{else}}
-  <A
+  <a
     class={{this.style}}
-    @href={{@href}}
     ...attributes
+    href={{this.href}}
+    {{on "click" this.navigate}}
   >
 
     {{yield}}
-  </A>
+  </a>
 {{/if}}

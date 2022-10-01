@@ -58,6 +58,7 @@ importers:
       prettier: ^2.5.1
       rollup: ^2.67.0
       rollup-plugin-copy: ^3.4.0
+      rollup-plugin-peer-deps-external: ^2.2.4
       rollup-plugin-ts: ^3.0.2
       semantic-release: ^19.0.2
       typescript: ^4.8.4
@@ -67,8 +68,6 @@ importers:
       dompurify: 2.4.0
       ember-modifier: 3.2.7_@babel+core@7.19.3
       ember-url-hash-polyfill: 1.0.8_@babel+core@7.19.3
-      highlight.js: 11.6.0
-      highlightjs-glimmer: 1.4.1_highlight.js@11.6.0
       lodash.merge: 4.6.2
     devDependencies:
       '@babel/core': 7.19.3
@@ -103,9 +102,12 @@ importers:
       eslint-plugin-ember: 10.6.1_eslint@7.32.0
       eslint-plugin-node: 11.1.0_eslint@7.32.0
       eslint-plugin-prettier: 4.2.1_7gsvg5lgwpfdww3i7smtqxamuy
+      highlight.js: 11.6.0
+      highlightjs-glimmer: 1.4.1_highlight.js@11.6.0
       prettier: 2.7.1
       rollup: 2.79.1
       rollup-plugin-copy: 3.4.0
+      rollup-plugin-peer-deps-external: 2.2.4_rollup@2.79.1
       rollup-plugin-ts: 3.0.2_kgf4xnezxfx2dfahxjd4ga56o4
       semantic-release: 19.0.5
       typescript: 4.8.4
@@ -9508,7 +9510,7 @@ packages:
   /highlight.js/11.6.0:
     resolution: {integrity: sha512-ig1eqDzJaB0pqEvlPVIpSSyMaO92bH1N2rJpLMN/nX396wTpDA4Eq0uK+7I/2XG17pFaaKE0kjV/XPeGt7Evjw==}
     engines: {node: '>=12.0.0'}
-    dev: false
+    dev: true
 
   /highlightjs-glimmer/1.4.1_highlight.js@11.6.0:
     resolution: {integrity: sha512-S2LpbYHcjvYMhf0TSFSKcFNbhDJwIVZBeTaFH1wCL9vL5XVX5fyrGG/IwCmIIvT0Vli9tUai8TTzmGJZrOSAtA==}
@@ -9517,7 +9519,7 @@ packages:
       highlight.js: '>= 11.0.0'
     dependencies:
       highlight.js: 11.6.0
-    dev: false
+    dev: true
 
   /hmac-drbg/1.0.1:
     resolution: {integrity: sha512-Tti3gMqLdZfhOQY1Mzf/AanLiqh1WTiJgEj26ZuYQ9fbkLomzGchCws4FyrSd4VkpBfiNhaE1On+lOz894jvXg==}
@@ -13164,6 +13166,14 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       del: 5.1.0
+    dev: true
+
+  /rollup-plugin-peer-deps-external/2.2.4_rollup@2.79.1:
+    resolution: {integrity: sha512-AWdukIM1+k5JDdAqV/Cxd+nejvno2FVLVeZ74NKggm3Q5s9cbbcOgUPGdbxPi4BXu7xGaZ8HG12F+thImYu/0g==}
+    peerDependencies:
+      rollup: '*'
+    dependencies:
+      rollup: 2.79.1
     dev: true
 
   /rollup-plugin-ts/3.0.2_kgf4xnezxfx2dfahxjd4ga56o4:

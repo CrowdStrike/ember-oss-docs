@@ -1,6 +1,7 @@
 import copy from 'rollup-plugin-copy';
 import { Addon } from '@embroider/addon-dev/rollup';
 import ts from 'rollup-plugin-ts';
+import peers from 'rollup-plugin-peer-deps-external';
 
 const addon = new Addon({
   srcDir: 'src',
@@ -15,8 +16,8 @@ export default {
     sourcemap: true,
     hoistTransitiveImports: false,
   },
-
   plugins: [
+    peers(),
     // These are the modules that users should be able to import from your
     // addon. Anything not listed here may get optimized away.
     addon.publicEntrypoints([
