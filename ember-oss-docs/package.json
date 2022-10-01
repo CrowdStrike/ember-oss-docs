@@ -106,6 +106,7 @@
       "./components/app.js": "./dist/_app_/components/app.js",
       "./components/content-section.js": "./dist/_app_/components/content-section.js",
       "./components/crowd-strike.js": "./dist/_app_/components/crowd-strike.js",
+      "./components/docfy/page-link.js": "./dist/_app_/components/docfy/page-link.js",
       "./components/docs-wrapper/index.js": "./dist/_app_/components/docs-wrapper/index.js",
       "./components/docs-wrapper/intersect-headings.js": "./dist/_app_/components/docs-wrapper/intersect-headings.js",
       "./components/external-link.js": "./dist/_app_/components/external-link.js",
