@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.13...v1.0.14) (2022-10-01)
+
+
+### Bug Fixes
+
+* **link:** simplify the link, reduce hljs size by 200kb ([ab7e5a0](https://github.com/CrowdStrike/ember-oss-docs/commit/ab7e5a0d82a1c59a0748fcaa3e6e608f8f0ec968))
+
 ## [1.0.13](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.12...v1.0.13) (2022-09-30)
 
 
