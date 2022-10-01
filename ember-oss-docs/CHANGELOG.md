@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.14...v1.0.15) (2022-10-01)
+
+
+### Bug Fixes
+
+* **sidebar:** docfy sidebar improvements ([01c6a08](https://github.com/CrowdStrike/ember-oss-docs/commit/01c6a086943aa941dcb03b4eeba71eb9e15ecbbc))
+
 ## [1.0.14](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.13...v1.0.14) (2022-10-01)
 
 
