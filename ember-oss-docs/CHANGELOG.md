@@ -1,3 +1,10 @@
+## [1.0.16](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.15...v1.0.16) (2022-10-04)
+
+
+### Bug Fixes
+
+* **buttons, docfy:** support disable state ([a41a435](https://github.com/CrowdStrike/ember-oss-docs/commit/a41a4352a0d220b7110f4ae4b04b6e091e0d5586))
+
 ## [1.0.15](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.14...v1.0.15) (2022-10-01)
 
 
