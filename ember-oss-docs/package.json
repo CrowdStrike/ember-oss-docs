@@ -147,7 +147,7 @@
   },
   "typesVersions": {
     "*": {
-      "glint": "glint.d.ts",
+      "glint": ["./glint.d.ts"],
       "*": [
         "dist/*"
       ]
@@ -155,7 +155,9 @@
   },
   "exports": {
     ".": "./dist/index.js",
-    "./glint": "./glint.d.ts",
+    "./glint": {
+      "types": "./glint.d.ts"
+    },
     "./tailwind": "./tailwind.cjs",
     "./*": "./dist/*",
     "./addon-main.js": "./addon-main.js"
