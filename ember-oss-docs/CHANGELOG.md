@@ -1,3 +1,10 @@
+## [1.0.17](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.16...v1.0.17) (2022-10-04)
+
+
+### Bug Fixes
+
+* **glint:** add more entries, fix glint.d.ts ([c88610f](https://github.com/CrowdStrike/ember-oss-docs/commit/c88610fcb670e238a304d7b13b7ca195b57e064e))
+
 ## [1.0.16](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.15...v1.0.16) (2022-10-04)
 
 
