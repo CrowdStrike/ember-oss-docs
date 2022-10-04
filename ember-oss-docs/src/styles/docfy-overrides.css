@@ -15,6 +15,9 @@ h2#examples {
 .prose .docfy-demo__example button:where(button:not(:where([class~="reset-styles"]))) {
   @apply focusable interactive-normal duration-150 ease-out inline-flex items-center justify-center px-2 py-1 rounded-sm transition type-md-medium;
 }
+.prose .docfy-demo__example button:disabled:where(button:not(:where([class~="reset-styles"]))) {
+  @apply bg-disabled;
+}
 
 .docfy-demo__snippet {
   max-height: 30rem;
