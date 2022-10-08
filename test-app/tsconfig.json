@@ -16,10 +16,10 @@
     // work with TypeScript.
     "baseUrl": ".",
     "paths": {
-      "oss/tests/*": [
+      "test-app/tests/*": [
         "tests/*"
       ],
-      "oss/*": [
+      "test-app/*": [
         "app/*"
       ],
       "*": [
