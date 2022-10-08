@@ -7,7 +7,7 @@ module.exports = function (defaults) {
     autoImport: {
       watchDependencies: ['ember-oss-docs'],
     },
-    'ember-cli-build': {
+    'ember-cli-babel': {
       enableTypeScriptTransform: true,
     },
   });
