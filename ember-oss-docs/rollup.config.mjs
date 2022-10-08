@@ -22,6 +22,7 @@ export default {
     // addon. Anything not listed here may get optimized away.
     addon.publicEntrypoints([
       'index.js',
+      'glint.js',
       'components/**/*.js',
       'services/**/*.js',
       'modifiers/highlight.js',
