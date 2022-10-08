@@ -1,3 +1,11 @@
+## [1.0.20](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.19...v1.0.20) (2022-10-08)
+
+
+### Bug Fixes
+
+* **ci:** use correct addon name ([d1cea53](https://github.com/CrowdStrike/ember-oss-docs/commit/d1cea5365bf409f7d39107bfa7dfb4d4095e5397))
+* **components:** now that @embroider/addon-dev@2 is out, components can be TS ([c6c8545](https://github.com/CrowdStrike/ember-oss-docs/commit/c6c8545bed46e3a110332d40ad6a4edd000caa85))
+
 ## [1.0.19](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.18...v1.0.19) (2022-10-08)
 
 
