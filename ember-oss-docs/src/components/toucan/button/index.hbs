@@ -1,7 +1,10 @@
 <button
   aria-disabled={{if @isDisabled "true"}}
   data-test-selector="button"
-  class={{this.styles}} ...attributes type="button" {{on "click" this.onClick}}
+  class={{this.styles}}
+  type="button"
+  ...attributes
+  {{on "click" this.onClick}}
 >
   {{yield}}
 </button>
