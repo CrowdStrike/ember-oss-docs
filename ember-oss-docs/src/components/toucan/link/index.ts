@@ -2,7 +2,7 @@ import Component from '@glimmer/component';
 import { assert } from '@ember/debug';
 import { service } from '@ember/service';
 
-import NavigationService from '../../../services/navigation';
+import type NavigationService from '../../../services/navigation';
 
 const VALID_VARIANTS = ['destructive', 'normal', 'primary', 'quiet', 'brand'] as const;
 

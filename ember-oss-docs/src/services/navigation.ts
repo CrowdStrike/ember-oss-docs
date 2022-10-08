@@ -4,9 +4,9 @@ import Service, { inject as service } from '@ember/service';
 
 import { scrollToHash } from 'ember-url-hash-polyfill';
 
+import type RouteInfo from '@ember/routing/route-info';
 import type RouterService from '@ember/routing/router-service';
 import type { WindowService } from 'ember-browser-services/types';
-import RouteInfo from '@ember/routing/route-info';
 
 // TODO: https://github.com/emberjs/rfcs/issues/657
 //   maybe eventually natively on RouteInfo?
@@ -22,16 +22,16 @@ function getParams(currentRouteInfo: RouteInfo) {
 }
 
 /**
-  * This class exists as a bit of a rough polyfill for supporting
-* native hrefs with anchor tags.
-  *
-  * Ember had planned to do this long ago, but there have been so many problems
-* with the routing layer, that most new features for routing have been put on hold
-  * until the whole thing can be re-designed and migration plan from old to new figured out.
-  *
-* A standalone and slightly simpler implementation may be seen here:
-*  https://codesandbox.io/s/custom-link-component-dgbxl?file=/app/components/link.hbs
-  */
+ * This class exists as a bit of a rough polyfill for supporting
+ * native hrefs with anchor tags.
+ *
+ * Ember had planned to do this long ago, but there have been so many problems
+ * with the routing layer, that most new features for routing have been put on hold
+ * until the whole thing can be re-designed and migration plan from old to new figured out.
+ *
+ * A standalone and slightly simpler implementation may be seen here:
+ *  https://codesandbox.io/s/custom-link-component-dgbxl?file=/app/components/link.hbs
+ */
 export default class NavigationService extends Service {
   @service declare router: RouterService;
   @service('browser/window') declare window: WindowService;
@@ -41,7 +41,8 @@ export default class NavigationService extends Service {
     event.preventDefault();
 
     let a = event.currentTarget;
-    assert(`handleAnchorClick may only be used on anchor tags`, a instanceof HTMLAnchorElement)
+
+    assert(`handleAnchorClick may only be used on anchor tags`, a instanceof HTMLAnchorElement);
 
     let isOpeningInNewTab = false;
     let href = a.href.replace(new RegExp(`^${document.location.origin}`), '');
@@ -53,7 +54,6 @@ export default class NavigationService extends Service {
 
       isOpeningInNewTab = metaKey || ctrlKey;
     }
-
 
     if (isAlwaysNewTab || isOpeningInNewTab) {
       this.window.open(a.href, '_blank', 'noopener,noreferrer');

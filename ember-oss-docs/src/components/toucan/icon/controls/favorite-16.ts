@@ -1,5 +1,5 @@
 import templateOnly from '@ember/component/template-only';
 
 export default templateOnly<{
-  Element: SVGElement
+  Element: SVGElement;
 }>();

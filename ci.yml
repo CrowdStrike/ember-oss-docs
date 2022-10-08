@@ -8,9 +8,7 @@ testApp: './test-app'
 
 lint:
   commits: true
-  eslint:
-    - './ember-oss-docs'
-    - './test-app'
+  cmd: 'pnpm lint'
 
 build:
   run: 'pnpm build'
@@ -21,7 +19,9 @@ build:
 
 support:
   ember-try: false
-  typescript: false
+  glint: true
+  typescript:
+    - "typescript@4.8"
 
 release:
   semantic: true

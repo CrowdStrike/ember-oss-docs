@@ -1,10 +1,6 @@
 import type { ComponentLike } from '@glint/template';
 
-import type {
-  App, Main, Hero, ExternalLink,
-  ContentSection, SubSection, TopBar
-} from '@crowdstrike/ember-oss-docs';
-
+import type * as Docs from '@crowdstrike/ember-oss-docs';
 import type * as Toucan from '@crowdstrike/tailwind-toucan-base/components/toucan';
 
 declare module '@glint/environment-ember-loose/registry' {
@@ -15,12 +11,12 @@ declare module '@glint/environment-ember-loose/registry' {
     /**
       * Docs / layout components
       */
-    App: typeof App;
-    ContentSection: typeof ContentSection;
-    SubSection: typeof SubSection;
-    TopBar: typeof TopBar;
-    Hero: typeof Hero;
-    Main: typeof Main;
+    App: typeof Docs.App;
+    ContentSection: typeof Docs.ContentSection;
+    SubSection: typeof Docs.SubSection;
+    TopBar: typeof Docs.TopBar;
+    Hero: typeof Docs.Hero;
+    Main: typeof Docs.Main;
     DocsWrapper: ComponentLike<{
       Blocks: { default: [] }
     }>;
@@ -28,7 +24,7 @@ declare module '@glint/environment-ember-loose/registry' {
     /**
       * Utility components
       */
-    ExternalLink: typeof ExternalLink;
+    ExternalLink: typeof Docs.ExternalLink;
 
     /**
       * Toucan, the component library, placeholders
