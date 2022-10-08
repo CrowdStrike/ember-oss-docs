@@ -1,7 +1,7 @@
 import type { ComponentLike } from '@glint/template';
 
-import type * as Docs from '@crowdstrike/ember-oss-docs';
-import type * as Toucan from '@crowdstrike/tailwind-toucan-base/components/toucan';
+import type * as Docs from './dist/index';
+import type * as Toucan from './dist/components/toucan';
 
 declare module '@glint/environment-ember-loose/registry' {
   export default interface Registry {
