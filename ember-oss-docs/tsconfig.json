@@ -31,8 +31,10 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "paths": {
-      "[core-types]": ["./core/types"],
-      "[deprecated-types]": ["./deprecated-in-v4/types"]
+      ".": ["./index.ts"],
+      "./*": ["./*"],
+      "@crowdstrike/ember-oss-docs": ["./index.ts"],
+      "@crowdstrike/ember-oss-docs/*": ["./*"]
     }
   },
   "include": [

@@ -24,8 +24,8 @@ export default {
       'index.js',
       'components/**/*.js',
       'services/**/*.js',
-      'modifiers/highlight.{js,ts}',
-      'utils/*.ts',
+      'modifiers/highlight.js',
+      'utils/*.js',
     ]),
 
     // These are the modules that should get reexported into the traditional

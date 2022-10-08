@@ -2,7 +2,9 @@ import Component from '@glimmer/component';
 import { assert } from '@ember/debug';
 import { action } from '@ember/object';
 
-const VALID_VARIANTS = ['destructive', 'link', 'primary', 'quiet', 'secondary'];
+const VALID_VARIANTS = ['destructive', 'link', 'primary', 'quiet', 'secondary'] as const;
+
+type Variant = typeof VALID_VARIANTS[number];
 
 const STYLES = {
   /**
@@ -27,7 +29,16 @@ const STYLES = {
   },
 };
 
-export default class Button extends Component {
+export default class Button extends Component<{
+  Args: {
+    variant?: Variant;
+    isDisabled?: boolean;
+    onClick: (event: Event) => void;
+  };
+  Blocks: {
+    default: [];
+  };
+}> {
   get variant() {
     let { variant } = this.args;
 
@@ -55,7 +66,7 @@ export default class Button extends Component {
   }
 
   @action
-  onClick(event) {
+  onClick(event: Event) {
     if (this.args.isDisabled) {
       event.stopImmediatePropagation();
 
