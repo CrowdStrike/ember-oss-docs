@@ -9,7 +9,6 @@ module('Rendering | all - strict mode', function(hooks) {
 
   test('all components can be rendered', async function (assert) {
     await render(
-      // @ts-ignore
       <template>
         <OSS.App>
           <:topBar>x</:topBar>
