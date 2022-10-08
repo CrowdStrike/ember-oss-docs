@@ -1,9 +1,12 @@
 import Component from '@glimmer/component';
-import { DEBUG } from '@glimmer/env';
 import { assert } from '@ember/debug';
 import { service } from '@ember/service';
 
-const VALID_VARIANTS = ['destructive', 'normal', 'primary', 'quiet', 'brand'];
+import type NavigationService from '../../../services/navigation';
+
+const VALID_VARIANTS = ['destructive', 'normal', 'primary', 'quiet', 'brand'] as const;
+
+type Variant = typeof VALID_VARIANTS[number];
 
 const INTERACTIVE_VARIANT = {
   destructive: 'interactive-destructive',
@@ -44,21 +47,19 @@ const baseLinkInteractions = [
   'text-primary-idle',
 ];
 
-export default class ToucanLink extends Component {
-  @service navigation;
+export default class ToucanLink extends Component<{
+  Element: HTMLAnchorElement;
+  Args: {
+    href: string;
+    variant?: Variant;
+    onClick?: (event: Event) => void;
+  };
+  Blocks: { default: [] };
+}> {
+  @service declare navigation: NavigationService;
 
   get href() {
-    if (DEBUG) {
-      let hasValidHref = this.args.href?.length > 0;
-
-      if (!hasValidHref) {
-        console.error(
-          'WARNING: <Link /> does not have a valid `href` attribute. Search the dom for #dev--missing-href'
-        );
-
-        return '#dev--missing-href';
-      }
-    }
+    assert(`a <Link /> must have a valid @href argument`, this.args.href);
 
     let { href } = this.args;
 
@@ -108,7 +109,7 @@ export default class ToucanLink extends Component {
     return variant;
   }
 
-  navigate = (event) => {
+  navigate = (event: Event) => {
     if (this.href.startsWith('#')) {
       // Link is an internal anchor in the current page, so allow default navigation
       this.args.onClick?.(event);

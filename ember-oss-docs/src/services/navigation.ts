@@ -4,10 +4,14 @@ import Service, { inject as service } from '@ember/service';
 
 import { scrollToHash } from 'ember-url-hash-polyfill';
 
+import type RouteInfo from '@ember/routing/route-info';
+import type RouterService from '@ember/routing/router-service';
+import type { WindowService } from 'ember-browser-services/types';
+
 // TODO: https://github.com/emberjs/rfcs/issues/657
 //   maybe eventually natively on RouteInfo?
-function getParams(currentRouteInfo) {
-  let params = [];
+function getParams(currentRouteInfo: RouteInfo) {
+  let params: Record<string, unknown>[] = [];
 
   while (currentRouteInfo.parent) {
     params = [currentRouteInfo.params, ...params];
@@ -17,24 +21,39 @@ function getParams(currentRouteInfo) {
   return params.map(Object.values).flat();
 }
 
+/**
+ * This class exists as a bit of a rough polyfill for supporting
+ * native hrefs with anchor tags.
+ *
+ * Ember had planned to do this long ago, but there have been so many problems
+ * with the routing layer, that most new features for routing have been put on hold
+ * until the whole thing can be re-designed and migration plan from old to new figured out.
+ *
+ * A standalone and slightly simpler implementation may be seen here:
+ *  https://codesandbox.io/s/custom-link-component-dgbxl?file=/app/components/link.hbs
+ */
 export default class NavigationService extends Service {
-  @service router;
-  @service('browser/window') window;
+  @service declare router: RouterService;
+  @service('browser/window') declare window: WindowService;
 
   @action
-  handleAnchorClick(event, target = 'currentTarget') {
+  handleAnchorClick(event: Event) {
     event.preventDefault();
 
-    // metaKey for MacOS / ctrlKey for Windows
-    let { metaKey, ctrlKey } = event;
-    let a = event[target];
+    let a = event.currentTarget;
 
-    assert(`event target is not an anchor element, ${target}`, a instanceof HTMLAnchorElement);
+    assert(`handleAnchorClick may only be used on anchor tags`, a instanceof HTMLAnchorElement);
 
+    let isOpeningInNewTab = false;
     let href = a.href.replace(new RegExp(`^${document.location.origin}`), '');
-
-    let isOpeningInNewTab = metaKey || ctrlKey;
     let isAlwaysNewTab = a.target === '_blank';
+
+    // metaKey for MacOS / ctrlKey for Windows
+    if (event instanceof MouseEvent || event instanceof KeyboardEvent) {
+      let { metaKey, ctrlKey } = event;
+
+      isOpeningInNewTab = metaKey || ctrlKey;
+    }
 
     if (isAlwaysNewTab || isOpeningInNewTab) {
       this.window.open(a.href, '_blank', 'noopener,noreferrer');
@@ -45,11 +64,11 @@ export default class NavigationService extends Service {
     this.navigateTo(href);
   }
 
-  isRouteActive(route) {
+  isRouteActive(route: string) {
     return this.router.isActive(route);
   }
 
-  isLinkActive(link) {
+  isLinkActive(link: string) {
     let routeInfo = this.router.recognize(link);
 
     // early return when the routes are no where close to similar
@@ -64,7 +83,7 @@ export default class NavigationService extends Service {
     });
   }
 
-  navigateTo(url) {
+  navigateTo(url: string) {
     let rootUrl = this.router.rootURL;
 
     if (url.startsWith(rootUrl)) {

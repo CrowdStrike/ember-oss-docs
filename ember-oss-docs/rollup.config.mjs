@@ -22,10 +22,11 @@ export default {
     // addon. Anything not listed here may get optimized away.
     addon.publicEntrypoints([
       'index.js',
+      'glint.js',
       'components/**/*.js',
       'services/**/*.js',
-      'modifiers/highlight.{js,ts}',
-      'utils/*.ts',
+      'modifiers/highlight.js',
+      'utils/*.js',
     ]),
 
     // These are the modules that should get reexported into the traditional

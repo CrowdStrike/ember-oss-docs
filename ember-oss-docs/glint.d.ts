@@ -1,3 +1,5 @@
+import type * as Toucan from './dist/components/toucan';
+import type * as Docs from './dist/index';
 import type { ComponentLike } from '@glint/template';
 
 declare module '@glint/environment-ember-loose/registry' {
@@ -6,65 +8,29 @@ declare module '@glint/environment-ember-loose/registry' {
     CrowdStrike: ComponentLike;
 
     /**
-      * Docs / layout components
-      */
-    App: ComponentLike<{
-      Blocks: {
-        topBar?: [];
-        content: [];
-        footer?: [];
-      }
-    }>;
-    ContentSection: ComponentLike<{
-      Blocks: {
-        header?: [];
-        content: [];
-        footer?: [];
-      }
-    }>;
-    TopBar: ComponentLike<{
-      Blocks: {
-        logo?: [];
-        title: [];
-        links?: [];
-      }
-    }>;
-    Hero: ComponentLike<{
-      Element: HTMLDivElement;
-      Args: {
-        image?: string;
-      }
-      Blocks: { default: [] }
-    }>;
-    Main: ComponentLike<{
-      Blocks: { default: [] }
-    }>;
+     * Docs / layout components
+     */
+    App: typeof Docs.App;
+    ContentSection: typeof Docs.ContentSection;
+    SubSection: typeof Docs.SubSection;
+    TopBar: typeof Docs.TopBar;
+    Hero: typeof Docs.Hero;
+    Main: typeof Docs.Main;
     DocsWrapper: ComponentLike<{
-      Blocks: { default: [] }
+      Blocks: { default: [] };
     }>;
 
     /**
-      * Utility components
-      */
-    ExternalLink: ComponentLike<{
-      Element: HTMLAnchorElement;
-      Args: {
-        href: string;
-      };
-      Blocks: { default: [] }
-    }>;
+     * Utility components
+     */
+    ExternalLink: typeof Docs.ExternalLink;
 
     /**
-      * Toucan, the component library, placeholders
-      */
-    'Toucan::Link': ComponentLike<{
-      Element: HTMLAnchorElement;
-      Args: {
-        href: string;
-        variant?: string;
-      };
-      Blocks: { default: [] }
-    }>
-
+     * Toucan, the component library, placeholders
+     */
+    'Toucan::Link': typeof Toucan.Link;
+    'Toucan::Icon': typeof Toucan.Icon;
+    'Toucan::Input': typeof Toucan.Input;
+    'Toucan::Button': typeof Toucan.Button;
   }
 }

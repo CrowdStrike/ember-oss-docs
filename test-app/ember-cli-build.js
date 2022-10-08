@@ -7,6 +7,9 @@ module.exports = function (defaults) {
     autoImport: {
       watchDependencies: ['ember-oss-docs'],
     },
+    'ember-cli-babel': {
+      enableTypeScriptTransform: true,
+    },
   });
 
   const { maybeEmbroider } = require('@embroider/test-setup');
