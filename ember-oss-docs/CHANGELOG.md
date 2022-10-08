@@ -1,3 +1,10 @@
+## [1.0.18](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.17...v1.0.18) (2022-10-08)
+
+
+### Bug Fixes
+
+* remove extraneous skip-to-target div -- this should be defined in apps ([56dcdbf](https://github.com/CrowdStrike/ember-oss-docs/commit/56dcdbf726151719437859c90de45299c0d4705c))
+
 ## [1.0.17](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.16...v1.0.17) (2022-10-04)
 
 
