@@ -1,3 +1,11 @@
+## [1.0.19](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.18...v1.0.19) (2022-10-08)
+
+
+### Bug Fixes
+
+* allow the button to have type overridden ([6b8131b](https://github.com/CrowdStrike/ember-oss-docs/commit/6b8131bb17539b1fc7a0ec7538f69b048dbf9578))
+* better responsive padding ([bbc8136](https://github.com/CrowdStrike/ember-oss-docs/commit/bbc813660315967252ee6e7a5be6c7ee167d5c61))
+
 ## [1.0.18](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.17...v1.0.18) (2022-10-08)
 
 
