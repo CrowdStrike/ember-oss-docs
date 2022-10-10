@@ -1,8 +1,5 @@
 {
   "compilerOptions": {
-    // So that the test app's type checking doesn't break when we change types
-    "composite": true,
-
     // Path resolution
     "baseUrl": "./src",
     "moduleResolution": "node",
@@ -32,9 +29,7 @@
     "noImplicitReturns": true,
     "paths": {
       ".": ["./index.ts"],
-      "./*": ["./*"],
-      "@crowdstrike/ember-oss-docs": ["./index.ts"],
-      "@crowdstrike/ember-oss-docs/*": ["./*"]
+      "./*": ["./*"]
     }
   },
   "include": [

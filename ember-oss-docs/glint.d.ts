@@ -1,8 +1,10 @@
+import '@glint/environment-ember-loose/registry';
+
 import type * as Toucan from './dist/components/toucan';
 import type * as Docs from './dist/index';
 import type { ComponentLike } from '@glint/template';
 
-declare module '@glint/environment-ember-loose/registry' {
+declare module "@glint/environment-ember-loose/registry" {
   export default interface Registry {
     // Logo
     CrowdStrike: ComponentLike;
