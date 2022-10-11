@@ -6,6 +6,10 @@ template: "v2-addon"
 addon: './ember-oss-docs'
 testApp: './test-app'
 
+# https://github.com/pnpm/pnpm/issues/4965
+fixes: ['pnpm#4965']
+
+
 lint:
   commits: true
   cmd: 'pnpm lint'
@@ -21,7 +25,8 @@ support:
   ember-try: false
   glint: true
   typescript:
-    - "typescript@4.8"
+    - "typescript@4.7"
+    # - "typescript@4.8"
 
 release:
   semantic: true

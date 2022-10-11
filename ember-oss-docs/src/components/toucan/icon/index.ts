@@ -7,7 +7,7 @@ import { MAP } from './map';
 export default class IconComponent extends Component<{
   Element: SVGElement;
   Args: {
-    path: string;
+    path: keyof typeof MAP;
   };
 }> {
   get Icon() {
