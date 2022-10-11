@@ -1,3 +1,10 @@
+## [1.0.21](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.20...v1.0.21) (2022-10-11)
+
+
+### Bug Fixes
+
+* **glint, loose:** add peer to the loose environment ([81c0feb](https://github.com/CrowdStrike/ember-oss-docs/commit/81c0feb7762ba5cb23175d758f4b0902e0f9f79d))
+
 ## [1.0.20](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.19...v1.0.20) (2022-10-08)
 
 
