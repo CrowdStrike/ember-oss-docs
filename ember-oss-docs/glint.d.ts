@@ -7,7 +7,7 @@ import type { ComponentLike } from '@glint/template';
 declare module "@glint/environment-ember-loose/registry" {
   export default interface Registry {
     // Logo
-    CrowdStrike: ComponentLike;
+    CrowdStrike: typeof Docs.CrowdStrike;
 
     /**
      * Docs / layout components
