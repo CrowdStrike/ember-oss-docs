@@ -24,6 +24,3 @@ runs:
     with:
       name: dist
       path: ${{ env.dist }}
-  - name: 'Install dependencies'
-    shell: 'bash'
-    run: pnpm install
