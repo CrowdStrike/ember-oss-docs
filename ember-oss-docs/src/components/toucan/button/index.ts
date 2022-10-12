@@ -30,10 +30,11 @@ const STYLES = {
 };
 
 export default class Button extends Component<{
+  Element: HTMLButtonElement;
   Args: {
     variant?: Variant;
     isDisabled?: boolean;
-    onClick: (event: Event) => void;
+    onClick?: (event: Event) => void;
   };
   Blocks: {
     default: [];
@@ -73,8 +74,6 @@ export default class Button extends Component<{
       return;
     }
 
-    if (this.args.onClick) {
-      return this.args.onClick(event);
-    }
+    return this.args.onClick?.(event);
   }
 }
