@@ -10,6 +10,7 @@ h2#examples {
   --tw-prose-body: var(--text-and-icons);
   --tw-prose-links: var(--text-primary-idle);
   --tw-prose-code: var(--text-body-and-labels);
+  --tw-prose-bold: var(--text-body-and-labels);
 }
 
 .prose .docfy-demo__example button:where(button:not(:where([class~="reset-styles"]))) {
