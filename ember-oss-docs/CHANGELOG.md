@@ -1,3 +1,10 @@
+## [1.0.25](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.24...v1.0.25) (2022-10-12)
+
+
+### Bug Fixes
+
+* **prose:** use same color for bold text as other text ([6db6569](https://github.com/CrowdStrike/ember-oss-docs/commit/6db6569e3b07e2dc907461b422b21fa5abcd52b1))
+
 ## [1.0.24](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.23...v1.0.24) (2022-10-12)
 
 
