@@ -1,3 +1,10 @@
+## [1.0.24](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.23...v1.0.24) (2022-10-12)
+
+
+### Bug Fixes
+
+* **types, content-section:** add Element type ([c0f9339](https://github.com/CrowdStrike/ember-oss-docs/commit/c0f93397839eace9db68da32ea3f64ba4ad25f1d))
+
 ## [1.0.23](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.22...v1.0.23) (2022-10-12)
 
 
