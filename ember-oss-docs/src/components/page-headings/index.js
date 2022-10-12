@@ -5,6 +5,7 @@ import { scrollToElement } from './scroll-to';
 
 export default class PageHeadings extends Component {
   eq = (a, b) => a === b;
+  gt = (a, b) => a > b;
 
   @action
   onClick(evt) {

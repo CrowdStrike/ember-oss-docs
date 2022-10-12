@@ -3,7 +3,7 @@
 >
   {{! @glint-ignore }}
   <DocfyOutput @fromCurrentURL={{true}} as |page|>
-    {{#if page.headings.length}}
+    {{#if (this.gt page.headings.length 0)}}
       <ul>
         {{#each page.headings as |heading|}}
           <li class="pb-2 border-l border-gray-400 dark:border-gray-700">
