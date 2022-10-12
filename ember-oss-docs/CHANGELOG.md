@@ -1,3 +1,10 @@
+## [1.0.22](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.21...v1.0.22) (2022-10-12)
+
+
+### Bug Fixes
+
+* **button:** types, more lenient ([1d1dd0d](https://github.com/CrowdStrike/ember-oss-docs/commit/1d1dd0d5fa103715a8b6cb240dd79731f8ddd670))
+
 ## [1.0.21](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.20...v1.0.21) (2022-10-11)
 
 
