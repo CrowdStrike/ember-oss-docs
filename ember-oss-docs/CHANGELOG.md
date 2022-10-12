@@ -1,3 +1,10 @@
+## [1.0.23](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.22...v1.0.23) (2022-10-12)
+
+
+### Bug Fixes
+
+* **page-headings:** remove headings when only one is present ([a35da1e](https://github.com/CrowdStrike/ember-oss-docs/commit/a35da1efe6420f905c688bc07de084b90252ec92))
+
 ## [1.0.22](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.21...v1.0.22) (2022-10-12)
 
 
