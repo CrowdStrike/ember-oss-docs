@@ -1,3 +1,5 @@
 import templateOnly from '@ember/component/template-only';
 
-export default templateOnly();
+export default templateOnly<{
+  Element: SVGElement;
+}>();
