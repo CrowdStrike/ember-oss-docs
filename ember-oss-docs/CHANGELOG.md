@@ -1,3 +1,10 @@
+## [1.0.26](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.25...v1.0.26) (2022-10-13)
+
+
+### Bug Fixes
+
+* **logo:** add splattributes ([c736714](https://github.com/CrowdStrike/ember-oss-docs/commit/c736714756df488454a6714dd987e2f8debe9558))
+
 ## [1.0.25](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.24...v1.0.25) (2022-10-12)
 
 
