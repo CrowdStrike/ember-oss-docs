@@ -1,3 +1,11 @@
+## [1.0.28](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.27...v1.0.28) (2022-10-14)
+
+
+### Bug Fixes
+
+* **button:** disabled styles were incorrect for docfy-overrides ([4aded5d](https://github.com/CrowdStrike/ember-oss-docs/commit/4aded5d34d4d4b018d8e72f34d2e69182c80026a))
+* **hljs:** add more languages to highlight.js ([9b70eb6](https://github.com/CrowdStrike/ember-oss-docs/commit/9b70eb6ecce8905b3e2cc9421bd985e03a258767))
+
 ## [1.0.27](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.26...v1.0.27) (2022-10-14)
 
 

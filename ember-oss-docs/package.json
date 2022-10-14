@@ -1,6 +1,6 @@
 {
   "name": "@crowdstrike/ember-oss-docs",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "description": "Common components for authoring docs for CrowdStrike's Ember OSS projects",
   "keywords": [
     "ember-addon"
