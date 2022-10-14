@@ -1,3 +1,10 @@
+## [1.0.27](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.26...v1.0.27) (2022-10-14)
+
+
+### Bug Fixes
+
+* **breakpoints:** add xs breakpoint ([120e2be](https://github.com/CrowdStrike/ember-oss-docs/commit/120e2be47a36534caabbf034ceb113072ffe22f3))
+
 ## [1.0.26](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.25...v1.0.26) (2022-10-13)
 
 
