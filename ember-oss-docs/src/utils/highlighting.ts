@@ -33,8 +33,13 @@ class Highlighter {
   constructor(owner: Owner) {
     this.observer = setupObserver(owner);
 
+    let router = owner.lookup('service:router') as RouterService;
+
+    router.on('routeDidChange', this.highlight);
+
     registerDestructor(this, () => {
       this.observer.disconnect();
+      router.off('routeDidChange', this.highlight);
     });
   }
 
@@ -94,6 +99,12 @@ const languageTags = [
   'language-js',
   'language-typescript',
   'language-ts',
+  'language-gts',
+  'language-gjs',
+  'language-css',
+  'language-bash',
+  'language-shell',
+  'language-powershell',
   'language-handlebars',
   'language-hbs',
   'language-go',

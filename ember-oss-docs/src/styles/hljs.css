@@ -79,7 +79,16 @@
 .hljs {
   background: var(--code-bg);
   display: block;
-  font-family: 'Source Code Pro', ui-monospace, monospace, sans-serif;
+  font-family: ui-monospace,
+             Menlo, Monaco,
+             "Cascadia Mono", "Segoe UI Mono",
+             "Roboto Mono",
+             "Oxygen Mono",
+             "Ubuntu Monospace",
+             "Source Code Pro",
+             "Fira Mono",
+             "Droid Sans Mono",
+             "Courier New", monospace;
   line-height: 1.25rem;
   font-size: 0.85rem;
 }
