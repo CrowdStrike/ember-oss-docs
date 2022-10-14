@@ -1,3 +1,10 @@
+## [1.0.29](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.28...v1.0.29) (2022-10-14)
+
+
+### Bug Fixes
+
+* **hljs:** more highlight.js tweaks/fixes -- better fonts ([1d2c8df](https://github.com/CrowdStrike/ember-oss-docs/commit/1d2c8dfd610967303d6ee139d73794e90b5a765a))
+
 ## [1.0.28](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.27...v1.0.28) (2022-10-14)
 
 
