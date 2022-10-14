@@ -53,20 +53,31 @@ export async function getHighlighter(): Promise<HLJSApi> {
    * since we now use hljs on initial page load, eagerly, we want to load
    * as little as possible
    */
-  let [hljs, glimmer, javascript, typescript, markdown] = await Promise.all([
-    import('highlight.js/lib/core'),
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    import('highlightjs-glimmer'),
-    import('highlight.js/lib/languages/javascript'),
-    import('highlight.js/lib/languages/typescript'),
-    import('highlight.js/lib/languages/markdown'),
-  ]);
+  let [hljs, glimmer, javascript, json, typescript, css, bash, shell, powershell, markdown] =
+    await Promise.all([
+      import('highlight.js/lib/core'),
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      import('highlightjs-glimmer'),
+      import('highlight.js/lib/languages/javascript'),
+      import('highlight.js/lib/languages/json'),
+      import('highlight.js/lib/languages/typescript'),
+      import('highlight.js/lib/languages/css'),
+      import('highlight.js/lib/languages/bash'),
+      import('highlight.js/lib/languages/shell'),
+      import('highlight.js/lib/languages/powershell'),
+      import('highlight.js/lib/languages/markdown'),
+    ]);
 
   HIGHLIGHT = hljs.default;
   HIGHLIGHT.registerLanguage('javascript', javascript.default);
   HIGHLIGHT.registerLanguage('typescript', typescript.default);
   HIGHLIGHT.registerLanguage('markdown', markdown.default);
+  HIGHLIGHT.registerLanguage('json', json.default);
+  HIGHLIGHT.registerLanguage('css', css.default);
+  HIGHLIGHT.registerLanguage('bash', bash.default);
+  HIGHLIGHT.registerLanguage('shell', shell.default);
+  HIGHLIGHT.registerLanguage('powershell', powershell.default);
 
   glimmer.setup(HIGHLIGHT);
 
