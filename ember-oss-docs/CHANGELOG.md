@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.29...v1.1.0) (2022-10-20)
+
+
+### Features
+
+* **sidebar-nav:** add ability to sort categories via categoryOrder config ([c89b82a](https://github.com/CrowdStrike/ember-oss-docs/commit/c89b82a3b099bffe774a73451fc0949dcca6fe2f))
+
 ## [1.0.29](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.28...v1.0.29) (2022-10-14)
 
 
