@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.0...v1.1.1) (2022-11-09)
+
+
+### Bug Fixes
+
+* **glint:** use new registry pattern ([47baf1b](https://github.com/CrowdStrike/ember-oss-docs/commit/47baf1bd26b98a5af58ae47a1fae96463e6213de))
+
 # [1.1.0](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.0.29...v1.1.0) (2022-10-20)
 
 
