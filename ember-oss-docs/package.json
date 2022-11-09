@@ -156,9 +156,6 @@
   },
   "typesVersions": {
     "*": {
-      "glint": [
-        "./glint.d.ts"
-      ],
       "*": [
         "dist/*"
       ]
