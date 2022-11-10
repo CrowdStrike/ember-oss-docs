@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.1...v1.1.2) (2022-11-10)
+
+
+### Bug Fixes
+
+* **peer:** widen hljs-glimmer range ([a6eba7b](https://github.com/CrowdStrike/ember-oss-docs/commit/a6eba7bee0b944c91859c7a949a410a992e1c7b8))
+
 ## [1.1.1](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.0...v1.1.1) (2022-11-09)
 
 
