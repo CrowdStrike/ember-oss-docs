@@ -48,7 +48,7 @@
     "@glint/template": ">= 0.9.0",
     "@tailwindcss/typography": "^0.5.7",
     "highlight.js": "^11.6.0",
-    "highlightjs-glimmer": "^1.4.1"
+    "highlightjs-glimmer": "^1.4.1 || ^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
@@ -89,7 +89,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "highlight.js": "^11.6.0",
-    "highlightjs-glimmer": "^1.4.1",
+    "highlightjs-glimmer": "^2.0.1",
     "prettier": "^2.5.1",
     "rollup": "^2.67.0",
     "rollup-plugin-copy": "^3.4.0",
