@@ -13,6 +13,8 @@
 # misc
 /coverage/
 !.*
+*.yml
+*.yaml
 .eslintcache
 .lint-todo/
 

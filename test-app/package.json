@@ -34,6 +34,7 @@
     }
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
     "@crowdstrike/tailwind-toucan-base": "^3.3.1",
     "@docfy/core": "^0.5.0",
     "@docfy/ember": "^0.5.0",
@@ -72,7 +73,8 @@
     "@types/ember__utils": "^4.0.2",
     "@types/qunit": "^2.19.3",
     "@types/rsvp": "^4.0.4",
-    "@typescript-eslint/parser": "^5.38.1",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
     "autoprefixer": "^10.4.12",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
