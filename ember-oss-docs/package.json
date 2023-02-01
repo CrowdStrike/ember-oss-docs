@@ -34,7 +34,7 @@
     "@babel/runtime": "^7.0.0",
     "@embroider/addon-shim": "^1.8.3",
     "dompurify": "^2.4.0",
-    "ember-modifier": "^3.2.7",
+    "ember-modifier": "^3.2.7 || ^4.0.0",
     "ember-url-hash-polyfill": "^1.0.8",
     "lodash.merge": "^4.6.2"
   },
@@ -79,7 +79,7 @@
     "@types/ember__routing": "^4.0.11",
     "@types/ember__service": "^4.0.0",
     "concurrently": "^7.2.1",
-    "ember-browser-services": "^4.0.3",
+    "ember-browser-services": "^4.0.4",
     "ember-template-imports": "^3.1.1",
     "ember-template-lint": "^4.14.0",
     "eslint": "^7.32.0",
