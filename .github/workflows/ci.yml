@@ -72,7 +72,8 @@ jobs:
       fail-fast: true
       matrix:
         typescript-scenario:
-          - typescript@4.7
+          - typescript@4.8
+          - typescript@4.9
 
     steps:
       - uses: actions/checkout@v3
@@ -87,7 +88,7 @@ jobs:
           pnpm --filter test-app exec glint --version;
           pnpm --filter test-app exec glint;
 
-  
+
 
 
   default_tests:
