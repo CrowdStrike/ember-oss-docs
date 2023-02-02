@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.2...v1.1.3) (2023-02-02)
+
+
+### Bug Fixes
+
+* trigger release ([e79ccfe](https://github.com/CrowdStrike/ember-oss-docs/commit/e79ccfedc429f8fccb84b7edf52ac4290724d90a))
+
 ## [1.1.2](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.1...v1.1.2) (2022-11-10)
 
 
