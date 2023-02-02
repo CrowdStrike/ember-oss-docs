@@ -7,10 +7,12 @@ function getHeadingIds(headings, output = []) {
   if (typeof headings === 'undefined') {
     return [];
   }
+
   headings.forEach((heading) => {
     output.push(heading.id);
     getHeadingIds(heading.headings, output);
   });
+
   return output;
 }
 
@@ -81,6 +83,7 @@ export default class IntersectHeadingsModifier extends Modifier {
 
       this.headings.forEach((id) => {
         const el = document.getElementById(id);
+
         if (el) {
           this.observer.observe(el);
         }
@@ -100,6 +103,7 @@ export default class IntersectHeadingsModifier extends Modifier {
 
   didReceiveArguments() {
     const [handler] = this.args.positional;
+
     this.handler = handler;
     this.headings = getHeadingIds(this.args.named.headings);
 

@@ -4,7 +4,7 @@ import { action } from '@ember/object';
 
 const VALID_VARIANTS = ['destructive', 'link', 'primary', 'quiet', 'secondary'] as const;
 
-type Variant = typeof VALID_VARIANTS[number];
+type Variant = (typeof VALID_VARIANTS)[number];
 
 const STYLES = {
   /**

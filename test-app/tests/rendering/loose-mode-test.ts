@@ -14,7 +14,9 @@ module('Rendering | all - loose mode', function (hooks) {
 
   test('all components can be rendered', async function (assert) {
     this.setProperties({
-      noop: () => {},
+      noop: () => {
+        /* intentionally empty */
+      },
     });
 
     await render(hbs`
@@ -43,6 +45,7 @@ module('Rendering | all - loose mode', function (hooks) {
         <:links>x</:links>
       </TopBar>
 
+      {{! @glint-ignore}}
       <Toucan::Button @onClick={{this.noop}}>x</Toucan::Button>
       <Toucan::Icon @path="micro/caret-right-16" />
       <Toucan::Input />

@@ -36,10 +36,10 @@ module.exports = {
         },
       },
       // This rule seems forever incorrect -- should probably be removed
-      // eslint-disable-next-line node/no-missing-require
+      // eslint-disable-next-line n/no-missing-require
       presets: [require('@crowdstrike/tailwind-toucan-base')],
       safelist: ['theme-dark', 'theme-light', 'theme-mezzanine'],
-      // eslint-disable-next-line node/no-missing-require
+      // eslint-disable-next-line n/no-missing-require
       plugins: [require('@tailwindcss/typography')],
     };
 

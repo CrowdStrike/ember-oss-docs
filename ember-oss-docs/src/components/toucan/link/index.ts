@@ -6,7 +6,7 @@ import type NavigationService from '../../../services/navigation';
 
 const VALID_VARIANTS = ['destructive', 'normal', 'primary', 'quiet', 'brand'] as const;
 
-type Variant = typeof VALID_VARIANTS[number];
+type Variant = (typeof VALID_VARIANTS)[number];
 
 const INTERACTIVE_VARIANT = {
   destructive: 'interactive-destructive',

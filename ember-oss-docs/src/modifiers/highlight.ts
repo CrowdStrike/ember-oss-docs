@@ -15,11 +15,8 @@ interface Signature {
   };
 }
 
-export default modifier<Signature>(
-  (element, _positional, named) => {
-    assert(`{{higlight}} may only be used on HTML elements`, element instanceof HTMLElement);
+export default modifier<Signature>((element, _positional, named) => {
+  assert(`{{higlight}} may only be used on HTML elements`, element instanceof HTMLElement);
 
-    highlightCodeBlocks(element, named);
-  },
-  { eager: false }
-);
+  highlightCodeBlocks(element, named);
+});

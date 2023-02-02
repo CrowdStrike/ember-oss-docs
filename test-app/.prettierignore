@@ -13,6 +13,9 @@
 # misc
 /coverage/
 !.*
+*.md
+*.yml
+*.yaml
 .eslintcache
 .lint-todo/
 

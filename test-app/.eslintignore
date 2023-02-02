@@ -1,3 +1,7 @@
+# tmp
+*.gts
+*.gjs
+
 # unconventional js
 /blueprints/*/files/
 /vendor/
