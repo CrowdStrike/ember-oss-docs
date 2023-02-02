@@ -51,8 +51,8 @@
     "@tailwindcss/typography": "^0.5.7",
     "@tsconfig/ember": "^1.0.1",
     "@types/ember": "^4.0.2",
-    "@types/ember-qunit": "^5.0.2",
-    "@types/ember-resolver": "^5.0.13",
+    "@types/ember-qunit": "^6.1.1",
+    "@types/ember-resolver": "^9.0.0",
     "@types/ember__application": "^4.0.4",
     "@types/ember__array": "^4.0.3",
     "@types/ember__component": "^4.0.11",
@@ -68,7 +68,6 @@
     "@types/ember__string": "^3.0.10",
     "@types/ember__template": "^4.0.1",
     "@types/ember__test": "^4.0.1",
-    "@types/ember__test-helpers": "^2.8.2",
     "@types/ember__utils": "^4.0.2",
     "@types/qunit": "^2.19.3",
     "@types/rsvp": "^4.0.4",
@@ -112,7 +111,7 @@
     "qunit": "^2.19.1",
     "qunit-dom": "^2.0.0",
     "tailwindcss": "^3.1.8",
-    "typescript": "~4.7.4",
+    "typescript": "~4.9.5",
     "webpack": "^5.74.0"
   },
   "engines": {

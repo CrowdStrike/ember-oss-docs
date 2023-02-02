@@ -45,6 +45,7 @@ module('Rendering | all - loose mode', function (hooks) {
         <:links>x</:links>
       </TopBar>
 
+      {{! @glint-ignore}}
       <Toucan::Button @onClick={{this.noop}}>x</Toucan::Button>
       <Toucan::Icon @path="micro/caret-right-16" />
       <Toucan::Input />
