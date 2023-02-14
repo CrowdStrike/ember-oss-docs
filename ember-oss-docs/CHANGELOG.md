@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.3...v1.1.4) (2023-02-14)
+
+
+### Bug Fixes
+
+* declare ember-browser-services as peer dependency ([e841863](https://github.com/CrowdStrike/ember-oss-docs/commit/e84186345b6d664a52d6f2d27f64e4752f7094ca))
+
 ## [1.1.3](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.2...v1.1.3) (2023-02-02)
 
 
