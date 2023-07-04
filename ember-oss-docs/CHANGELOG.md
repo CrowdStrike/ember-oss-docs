@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.4...v1.1.5) (2023-07-04)
+
+
+### Bug Fixes
+
+* specify page-title as helper for embroider ([b8543e9](https://github.com/CrowdStrike/ember-oss-docs/commit/b8543e94dc4bdd08489e754a54361382749e2e7b))
+
 ## [1.1.4](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.3...v1.1.4) (2023-02-14)
 
 
