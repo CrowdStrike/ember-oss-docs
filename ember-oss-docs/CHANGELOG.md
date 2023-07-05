@@ -1,3 +1,11 @@
+## [1.1.6](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.5...v1.1.6) (2023-07-05)
+
+
+### Bug Fixes
+
+* Code blocks, remove backticks ([f485bd3](https://github.com/CrowdStrike/ember-oss-docs/commit/f485bd32efbec205c7d271159a631ffa8f180172))
+* Code blocks, remove backticks ([0a53f72](https://github.com/CrowdStrike/ember-oss-docs/commit/0a53f721ce5427e8729fdf02971bfa1c3e5e9e3c))
+
 ## [1.1.5](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.4...v1.1.5) (2023-07-04)
 
 
