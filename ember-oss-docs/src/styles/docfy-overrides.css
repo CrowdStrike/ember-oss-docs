@@ -20,6 +20,21 @@ h2#examples {
   @apply interactive-disabled;
 }
 
+.prose :where(code):not(:where([class~='not-prose'] *)) {
+  background-color: var(--basement);
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.prose :where(code):not(:where([class~='not-prose'] *))::before {
+  content: '';
+}
+
+.prose :where(code):not(:where([class~='not-prose'] *))::after {
+  content: '';
+}
+
 .docfy-demo__snippet {
   max-height: 30rem;
   overflow-y: scroll;
@@ -41,6 +56,7 @@ h2#examples {
 .docfy-collection .docfy-demo__snippet {
   overflow-x: auto;
 }
+
 
 .docfy-collection .docfy-demo__example {
   @apply grid justify-items-center;
