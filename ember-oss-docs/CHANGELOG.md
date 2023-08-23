@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.6...v1.1.7) (2023-08-23)
+
+
+### Bug Fixes
+
+* Update install instructions ([05f172f](https://github.com/CrowdStrike/ember-oss-docs/commit/05f172f75fe399dce1d33ff546bb002c25fdefc0))
+
 ## [1.1.6](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.5...v1.1.6) (2023-07-05)
 
 
