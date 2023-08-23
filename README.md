@@ -38,7 +38,7 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install ember-oss-docs
+ember install @crowdstrike/ember-oss-docs
 ```
 
 
