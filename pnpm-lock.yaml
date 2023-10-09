@@ -24,8 +24,8 @@ importers:
         specifier: ^7.0.0
         version: 7.20.13
       '@crowdstrike/tailwind-toucan-base':
-        specifier: ^3.3.1
-        version: 3.3.1(autoprefixer@10.4.13)(postcss@8.4.21)
+        specifier: ^4.0.0
+        version: 4.4.0(autoprefixer@10.4.13)(postcss@8.4.21)
       '@embroider/addon-shim':
         specifier: ^1.8.3
         version: 1.8.4
@@ -188,14 +188,17 @@ importers:
     dependencies:
       '@crowdstrike/ember-oss-docs':
         specifier: workspace:../ember-oss-docs
-        version: file:ember-oss-docs(@crowdstrike/tailwind-toucan-base@3.3.1)(@docfy/core@0.5.0)(@docfy/ember@0.5.0)(@glimmer/component@1.1.2)(@glint/environment-ember-loose@1.0.0-beta.2)(@glint/template@1.0.0-beta.2)(@tailwindcss/typography@0.5.9)(ember-browser-services@4.0.4)(ember-source@4.10.0)(highlight.js@11.7.0)(highlightjs-glimmer@1.4.1)
+        version: file:ember-oss-docs(@crowdstrike/tailwind-toucan-base@4.4.0)(@docfy/core@0.5.0)(@docfy/ember@0.5.0)(@glimmer/component@1.1.2)(@glint/environment-ember-loose@1.0.0-beta.2)(@glint/template@1.0.0-beta.2)(@tailwindcss/typography@0.5.9)(ember-browser-services@4.0.4)(ember-source@4.10.0)(highlight.js@11.7.0)(highlightjs-glimmer@1.4.1)
+      ember-browser-services:
+        specifier: ^4.0.4
+        version: 4.0.4
     devDependencies:
       '@babel/eslint-parser':
         specifier: ^7.19.1
         version: 7.19.1(@babel/core@7.20.12)(eslint@8.33.0)
       '@crowdstrike/tailwind-toucan-base':
-        specifier: ^3.3.1
-        version: 3.3.1(autoprefixer@10.4.13)(postcss@8.4.21)
+        specifier: ^4.0.0
+        version: 4.4.0(autoprefixer@10.4.13)(postcss@8.4.21)
       '@docfy/core':
         specifier: ^0.5.0
         version: 0.5.0
@@ -1878,8 +1881,8 @@ packages:
     dev: true
     optional: true
 
-  /@crowdstrike/tailwind-toucan-base@3.3.1(autoprefixer@10.4.13)(postcss@8.4.21):
-    resolution: {integrity: sha512-DGjFKPK7Y0UNJaaWBjE6M0PT/0bgJe3craBrbmI46hzRXMqwsWBZVlk98Sj5pl3pM2N8xldC94W9BpdLDoxrOg==}
+  /@crowdstrike/tailwind-toucan-base@4.4.0(autoprefixer@10.4.13)(postcss@8.4.21):
+    resolution: {integrity: sha512-43B4MO3tpIxpLoQiCm8WhQmx14NVD5PDCUa2m0mW9y1+Ij8WoKxz6MjvT7V4+Vh50PL/lJisUbVFRHq7XE27Tg==}
     engines: {node: '>=14.15.0'}
     dependencies:
       tailwindcss: 2.2.19(autoprefixer@10.4.13)(postcss@8.4.21)
@@ -14687,12 +14690,12 @@ packages:
   /zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
 
-  file:ember-oss-docs(@crowdstrike/tailwind-toucan-base@3.3.1)(@docfy/core@0.5.0)(@docfy/ember@0.5.0)(@glimmer/component@1.1.2)(@glint/environment-ember-loose@1.0.0-beta.2)(@glint/template@1.0.0-beta.2)(@tailwindcss/typography@0.5.9)(ember-browser-services@4.0.4)(ember-source@4.10.0)(highlight.js@11.7.0)(highlightjs-glimmer@1.4.1):
+  file:ember-oss-docs(@crowdstrike/tailwind-toucan-base@4.4.0)(@docfy/core@0.5.0)(@docfy/ember@0.5.0)(@glimmer/component@1.1.2)(@glint/environment-ember-loose@1.0.0-beta.2)(@glint/template@1.0.0-beta.2)(@tailwindcss/typography@0.5.9)(ember-browser-services@4.0.4)(ember-source@4.10.0)(highlight.js@11.7.0)(highlightjs-glimmer@1.4.1):
     resolution: {directory: ember-oss-docs, type: directory}
     id: file:ember-oss-docs
     name: '@crowdstrike/ember-oss-docs'
     peerDependencies:
-      '@crowdstrike/tailwind-toucan-base': ^3.3.1
+      '@crowdstrike/tailwind-toucan-base': ^4.0.0
       '@docfy/core': ^0.5.0
       '@docfy/ember': ^0.5.0
       '@glimmer/component': ^1.1.2
@@ -14704,7 +14707,7 @@ packages:
       highlightjs-glimmer: ^1.4.1 || ^2.0.0
     dependencies:
       '@babel/runtime': 7.20.13
-      '@crowdstrike/tailwind-toucan-base': 3.3.1(autoprefixer@10.4.13)(postcss@8.4.21)
+      '@crowdstrike/tailwind-toucan-base': 4.4.0(autoprefixer@10.4.13)(postcss@8.4.21)
       '@docfy/core': 0.5.0
       '@docfy/ember': 0.5.0
       '@embroider/addon-shim': 1.8.4
