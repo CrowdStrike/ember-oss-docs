@@ -23,8 +23,8 @@ importers:
       '@babel/plugin-transform-typescript': ^7.19.3
       '@babel/preset-typescript': ^7.18.6
       '@babel/runtime': ^7.0.0
-      '@docfy/core': ^0.5.0
-      '@docfy/ember': ^0.5.0
+      '@docfy/core': ^0.7.0
+      '@docfy/ember': ^0.7.0
       '@embroider/addon-dev': ^3.0.0
       '@embroider/addon-shim': ^1.8.3
       '@glimmer/component': ^1.1.2
@@ -82,8 +82,8 @@ importers:
       '@babel/plugin-syntax-decorators': 7.19.0_@babel+core@7.20.12
       '@babel/plugin-transform-typescript': 7.20.13_@babel+core@7.20.12
       '@babel/preset-typescript': 7.18.6_@babel+core@7.20.12
-      '@docfy/core': 0.5.0
-      '@docfy/ember': 0.5.0
+      '@docfy/core': 0.7.0
+      '@docfy/ember': 0.7.0
       '@embroider/addon-dev': 3.0.0_rollup@3.12.1
       '@glimmer/component': 1.1.2_@babel+core@7.20.12
       '@glimmer/tracking': 1.1.2
@@ -126,9 +126,9 @@ importers:
     specifiers:
       '@babel/eslint-parser': ^7.19.1
       '@crowdstrike/ember-oss-docs': workspace:../ember-oss-docs
-      '@crowdstrike/tailwind-toucan-base': ^3.3.1
-      '@docfy/core': ^0.5.0
-      '@docfy/ember': ^0.5.0
+      '@crowdstrike/tailwind-toucan-base': ^4.0.0
+      '@docfy/core': ^0.7.0
+      '@docfy/ember': ^0.7.0
       '@ember/optional-features': ^2.0.0
       '@ember/string': ^3.0.1
       '@ember/test-helpers': ^2.8.1
@@ -169,6 +169,7 @@ importers:
       babel-eslint: ^10.1.0
       broccoli-asset-rev: ^3.0.0
       ember-auto-import: ^2.4.2
+      ember-browser-services: ^4.0.4
       ember-cli: ~4.10.0
       ember-cli-app-version: ^5.0.0
       ember-cli-babel: ^7.26.11
@@ -206,12 +207,13 @@ importers:
       typescript: ~4.9.5
       webpack: ^5.74.0
     dependencies:
-      '@crowdstrike/ember-oss-docs': file:ember-oss-docs_44asr5bkjfensrprwy3dsnvmqm
+      '@crowdstrike/ember-oss-docs': file:ember-oss-docs_gnr4f7b4tx6smekw3hi2sewpsi
+      ember-browser-services: 4.0.4
     devDependencies:
       '@babel/eslint-parser': 7.19.1_eslint@8.33.0
-      '@crowdstrike/tailwind-toucan-base': 3.3.1_gbtt6ss3tbiz4yjtvdr6fbrj44
-      '@docfy/core': 0.5.0
-      '@docfy/ember': 0.5.0
+      '@crowdstrike/tailwind-toucan-base': 4.2.0_gbtt6ss3tbiz4yjtvdr6fbrj44
+      '@docfy/core': 0.7.0
+      '@docfy/ember': 0.7.0
       '@ember/optional-features': 2.0.0
       '@ember/string': 3.0.1
       '@ember/test-helpers': 2.9.3_wb4povywsuzahh6ttc4kzksvse
@@ -1887,8 +1889,8 @@ packages:
     dev: true
     optional: true
 
-  /@crowdstrike/tailwind-toucan-base/3.3.1_gbtt6ss3tbiz4yjtvdr6fbrj44:
-    resolution: {integrity: sha512-DGjFKPK7Y0UNJaaWBjE6M0PT/0bgJe3craBrbmI46hzRXMqwsWBZVlk98Sj5pl3pM2N8xldC94W9BpdLDoxrOg==}
+  /@crowdstrike/tailwind-toucan-base/4.2.0_gbtt6ss3tbiz4yjtvdr6fbrj44:
+    resolution: {integrity: sha512-oye3jIG5pbYJ5cC/XWqkRlr3MMS2aUNsmOOepGjvnEapTcWGRJ2L63Of5PMPTMRc7CN8B/oP9K45Aebz/+60ng==}
     engines: {node: '>=14.15.0'}
     dependencies:
       tailwindcss: 2.2.19_gbtt6ss3tbiz4yjtvdr6fbrj44
@@ -1897,8 +1899,8 @@ packages:
       - postcss
       - ts-node
 
-  /@docfy/core/0.5.0:
-    resolution: {integrity: sha512-4SBim8DAveFju1CiUfiHXGiWc+zC7CMWKid+jbwPW1AiVlwitrY2KJYGe+LN1dNxd3EcIVV8QULl7Po7ZTqxgg==}
+  /@docfy/core/0.7.0:
+    resolution: {integrity: sha512-7FRhToPy+jsVlq/8ESmfjcF6Y+AoAjht6fTBLUSxNGzXt3FsPLK6XkfZitfubyZLs/BNhO9l2NYNnKsmLTMciw==}
     engines: {node: '>= 12.*'}
     dependencies:
       debug: 4.3.4
@@ -1920,15 +1922,15 @@ packages:
       trough: 1.0.5
       unified: 9.2.2
       unist-util-visit: 2.0.3
-      yaml: 1.10.2
+      yaml: 2.3.2
     transitivePeerDependencies:
       - supports-color
 
-  /@docfy/ember/0.5.0:
-    resolution: {integrity: sha512-kgBGrryYXTQ5pB5q8X1R6IoJMwka6W6Z/+NFYbrxv6r2BY+4pR+P8Of7rBDf/ViPRMCYIU0BtZcQWZFPeN45KA==}
+  /@docfy/ember/0.7.0:
+    resolution: {integrity: sha512-tnDsaKmGxjhRuWtpgH0AY9DTdL4M4fxPPVCGGnb4oQIpDYodfzhER7YjRiFZ2KLUMJ8rsNiuBMUxPeFwV9W7HA==}
     engines: {node: '>= 12'}
     dependencies:
-      '@docfy/core': 0.5.0
+      '@docfy/core': 0.7.0
       broccoli-bridge: 1.0.0
       broccoli-file-creator: 2.1.1
       broccoli-funnel: 3.0.8
@@ -6482,7 +6484,6 @@ packages:
       ember-window-mock: 0.8.1
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /ember-cli-app-version/5.0.0:
     resolution: {integrity: sha512-afhx/CXDOMNXzoe4NDPy5WUfxWmYYHUzMCiTyvPBxCDBXYcMrtxNWxvgaSaeqcoHVEmqzeyBj8V82tzmT1dcyw==}
@@ -7366,7 +7367,6 @@ packages:
       ember-cli-htmlbars: 6.2.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /emoji-regex/8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -14817,6 +14817,10 @@ packages:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
 
+  /yaml/2.3.2:
+    resolution: {integrity: sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg==}
+    engines: {node: '>= 14'}
+
   /yargs-parser/20.2.9:
     resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
     engines: {node: '>=10'}
@@ -14865,32 +14869,34 @@ packages:
   /zwitch/1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
 
-  file:ember-oss-docs_44asr5bkjfensrprwy3dsnvmqm:
+  file:ember-oss-docs_gnr4f7b4tx6smekw3hi2sewpsi:
     resolution: {directory: ember-oss-docs, type: directory}
     id: file:ember-oss-docs
     name: '@crowdstrike/ember-oss-docs'
-    version: 1.1.2
+    version: 1.1.7
     peerDependencies:
-      '@crowdstrike/tailwind-toucan-base': ^3.3.1
-      '@docfy/core': ^0.5.0
-      '@docfy/ember': ^0.5.0
+      '@crowdstrike/tailwind-toucan-base': ^4.0.0
+      '@docfy/core': ^0.7.0
+      '@docfy/ember': ^0.7.0
       '@glimmer/component': ^1.1.2
       '@glint/environment-ember-loose': ^0.9.4 || ^1.0.0-beta.1
       '@glint/template': '>= 0.9.0 || ^1.0.0-beta.1'
       '@tailwindcss/typography': ^0.5.7
+      ember-browser-services: ^4.0.4
       highlight.js: ^11.6.0
       highlightjs-glimmer: ^1.4.1 || ^2.0.0
     dependencies:
       '@babel/runtime': 7.20.13
-      '@crowdstrike/tailwind-toucan-base': 3.3.1_gbtt6ss3tbiz4yjtvdr6fbrj44
-      '@docfy/core': 0.5.0
-      '@docfy/ember': 0.5.0
+      '@crowdstrike/tailwind-toucan-base': 4.2.0_gbtt6ss3tbiz4yjtvdr6fbrj44
+      '@docfy/core': 0.7.0
+      '@docfy/ember': 0.7.0
       '@embroider/addon-shim': 1.8.4
       '@glimmer/component': 1.1.2
       '@glint/environment-ember-loose': 1.0.0-beta.2_e7refz4ix4v3gbrmomy4b7q3ha
       '@glint/template': 1.0.0-beta.2
       '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
       dompurify: 2.4.3
+      ember-browser-services: 4.0.4
       ember-modifier: 4.0.0_ember-source@4.10.0
       ember-url-hash-polyfill: 1.0.8
       highlight.js: 11.7.0
