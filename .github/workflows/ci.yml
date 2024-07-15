@@ -20,7 +20,7 @@ jobs:
     name: Install
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/pnpm
 
 
@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [install_dependencies]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/pnpm
       - name: Lint
         run: pnpm lint
@@ -42,7 +42,7 @@ jobs:
     name: Commit Messages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - uses: ./.github/actions/pnpm
@@ -57,7 +57,7 @@ jobs:
     timeout-minutes: 5
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/pnpm
       - uses: ./.github/actions/assert-build
 
@@ -76,7 +76,7 @@ jobs:
           - typescript@4.9
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/pnpm
       - uses: ./.github/actions/download-built-package
       - name: 'Change TS to ${{ matrix.typescript-scenario }}'
@@ -97,7 +97,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [build]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/pnpm
       - uses: ./.github/actions/download-built-package
       - run: pnpm --filter test-app test:ember
@@ -108,7 +108,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [build]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/pnpm
       - name: Install Dependencies (without lockfile)
         run: rm pnpm-lock.yaml && pnpm install
@@ -129,7 +129,7 @@ jobs:
       - typecheck
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           persist-credentials: false
       - uses: ./.github/actions/pnpm
