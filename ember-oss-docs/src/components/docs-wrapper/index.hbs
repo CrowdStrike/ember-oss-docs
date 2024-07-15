@@ -1,9 +1,9 @@
 <div class="px-4 mx-auto lg:px-6 max-w-screen-2xl w-full">
   <DocfyOutput @fromCurrentURL={{true}} as |page|>
-    {{(page-title "Documentation")}}
+    {{page-title "Documentation"}}
 
     {{#unless page.frontmatter.hideTitle}}
-      {{(page-title page.title)}}
+      {{page-title page.title}}
     {{/unless}}
 
   </DocfyOutput>
