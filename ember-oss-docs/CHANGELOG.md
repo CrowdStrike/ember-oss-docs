@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.7...v1.1.8) (2024-07-15)
+
+
+### Bug Fixes
+
+* Fix use of page-title helper, causing GlimmerVM exceptions ([e87919b](https://github.com/CrowdStrike/ember-oss-docs/commit/e87919bbf298c44b63c18248270328f9f78ccd50))
+
 ## [1.1.7](https://github.com/CrowdStrike/ember-oss-docs/compare/v1.1.6...v1.1.7) (2023-08-23)
 
 
