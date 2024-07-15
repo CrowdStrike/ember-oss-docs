@@ -25,7 +25,8 @@
     "test:watch": "ember test --server"
   },
   "dependencies": {
-    "@crowdstrike/ember-oss-docs": "workspace:../ember-oss-docs"
+    "@crowdstrike/ember-oss-docs": "workspace:../ember-oss-docs",
+    "ember-browser-services": "^4.0.4"
   },
   "dependenciesMeta": {
     "@crowdstrike/ember-oss-docs": {
@@ -34,19 +35,19 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
-    "@crowdstrike/tailwind-toucan-base": "^3.3.1",
-    "@docfy/core": "^0.5.0",
-    "@docfy/ember": "^0.5.0",
+    "@crowdstrike/tailwind-toucan-base": "^4.0.0",
+    "@docfy/core": "^0.8.0",
+    "@docfy/ember": "^0.8.5",
     "@ember/optional-features": "^2.0.0",
     "@ember/string": "^3.0.1",
     "@ember/test-helpers": "^2.8.1",
     "@embroider/test-setup": "^2.1.1",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
-    "@glint/core": "^1.0.0-beta.1",
-    "@glint/environment-ember-loose": "^1.0.0-beta.1",
-    "@glint/environment-ember-template-imports": "^1.0.0-beta.1",
-    "@glint/template": "^1.0.0-beta.1",
+    "@glint/core": "^1.4.0",
+    "@glint/environment-ember-loose": "^1.4.0",
+    "@glint/environment-ember-template-imports": "^1.4.0",
+    "@glint/template": "^1.4.0",
     "@nullvoxpopuli/eslint-configs": "^3.1.1",
     "@tailwindcss/typography": "^0.5.7",
     "@tsconfig/ember": "^1.0.1",
@@ -115,7 +116,7 @@
     "webpack": "^5.74.0"
   },
   "engines": {
-    "node": "14.* || >= 16"
+    "node": "18.* || >= 20"
   },
   "ember": {
     "edition": "octane"
