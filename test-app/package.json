@@ -36,8 +36,8 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "@crowdstrike/tailwind-toucan-base": "^4.0.0",
-    "@docfy/core": "^0.7.0",
-    "@docfy/ember": "^0.7.0",
+    "@docfy/core": "^0.8.0",
+    "@docfy/ember": "^0.8.5",
     "@ember/optional-features": "^2.0.0",
     "@ember/string": "^3.0.1",
     "@ember/test-helpers": "^2.8.1",
