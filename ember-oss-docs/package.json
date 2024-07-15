@@ -151,9 +151,6 @@
       "@semantic-release/git"
     ]
   },
-  "volta": {
-    "extends": "../package.json"
-  },
   "typesVersions": {
     "*": {
       "*": [
